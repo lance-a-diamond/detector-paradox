@@ -3,7 +3,7 @@
 Replication materials for the paper *The Detector Paradox* (Diamond, 2026).
 
 **Paper version**: v0.9 (April 2026)
-**Zenodo DOI**: [TBD at publication time]
+**Zenodo DOI**: [10.5281/zenodo.19767696](https://doi.org/10.5281/zenodo.19767696) (version-specific) · concept DOI [10.5281/zenodo.19767695](https://doi.org/10.5281/zenodo.19767695) (always-newest)
 **Author**: Lance Diamond, independent researcher ([contact](mailto:lance.a.diamond@gmail.com))
 
 ## What this repository contains
@@ -162,8 +162,8 @@ The 474-word voice prompt used to generate the persona-engineered baseline (Pass
 If you use this data or code in your research, please cite:
 
 ```
-Diamond, L. (2026). The Detector Paradox: Why Optimizing for AI Detection Produces
-Less Human Writing. [venue TBD, Zenodo DOI: TBD].
+Diamond, L. (2026). The Detector Paradox: Why Evading AI Detection Removes the
+Features Readers Value. Zenodo. https://doi.org/10.5281/zenodo.19767696
 ```
 
 ## Contact

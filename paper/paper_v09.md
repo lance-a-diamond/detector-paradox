@@ -100,7 +100,7 @@ To quantify pipeline effectiveness, we define a convergence recovery score for e
 
 $$R_m = 1 - \frac{|x_{pipeline} - x_{human}|}{|x_{baseline} - x_{human}|}$$
 
-where $x_{pipeline}$ is the pipeline output value, $x_{human}$ is the human baseline mean, and $x_{baseline}$ is the persona baseline value (the starting-point text a pipeline attempts to modify; see §4.1 for the persona's design). A score of 1.0 indicates perfect convergence to the human population mean; 0.0 indicates no movement from baseline; negative values indicate movement away from human. Note that convergence to human statistical means is not the same as reader-perceived quality (§5.5.7); R_m measures the former only.
+where $x_{pipeline}$ is the pipeline output value, $x_{human}$ is the human baseline mean, and $x_{baseline}$ is the persona baseline value (the starting-point text a pipeline attempts to modify; see §4.1 for the persona's design). A score of 1.0 indicates perfect convergence to the human population mean; 0.0 indicates no movement from baseline; negative values indicate movement away from human. Note that convergence to human statistical means is not the same as reader-perceived quality (§5.5.7); $R_m$ measures the former only.
 
 # 4. Experimental Setup
 
@@ -589,7 +589,7 @@ All data and derived artifacts supporting this study will be released publicly u
 - **Persona prompt** (`persona_dana_chen.txt`): The full 474-word Dana persona voice prompt used to generate the baseline samples (§4.1).
 - **Pipeline outputs**: The surgical v10.2 chain (13-step intervention specification) and the cross-model v2 rewrite prompt, sufficient to reproduce the humanization pipelines described in §4.1.
 
-Release channel: public GitHub repository with permanent Zenodo DOI archival at the time of publication. License: CC-BY 4.0 for data and text artifacts; MIT for code (see next).
+Release channel: public GitHub repository at <https://github.com/lance-a-diamond/detector-paradox>, archived at Zenodo with DOI [10.5281/zenodo.19767696](https://doi.org/10.5281/zenodo.19767696) (version-specific) and concept DOI [10.5281/zenodo.19767695](https://doi.org/10.5281/zenodo.19767695) (always-newest). License: CC-BY 4.0 for data and text artifacts; MIT for code (see next).
 
 ## Code availability
 
