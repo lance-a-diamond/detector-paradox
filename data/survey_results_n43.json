@@ -1,0 +1,1827 @@
+{
+  "meta": {
+    "input_path": "data/responses_anonymized.json",
+    "n_responses": 43,
+    "n_kept": 43,
+    "filter": "none",
+    "generated_at": "2026-04-23T08:45:54.491107Z",
+    "output_path": "survey_results_n43.json",
+    "truth_map": {
+      "A": "human",
+      "B": "ai",
+      "C": "ai",
+      "D": "human",
+      "E": "ai",
+      "F": "human",
+      "G": "ai",
+      "H": "ai"
+    },
+    "conditions": {
+      "H": "persona_dana",
+      "B": "humanized_fnword",
+      "C": "crossmodel",
+      "E": "crossmodel",
+      "G": "crossmodel",
+      "A": "human",
+      "D": "human",
+      "F": "human"
+    }
+  },
+  "sections": {
+    "A_classification": {
+      "n_judgments": 344,
+      "A1_ai_detection": {
+        "hit": 87,
+        "n": 215,
+        "rate": 0.4046511627906977,
+        "ci_95": [
+          0.3384431562402597,
+          0.4735263916556846
+        ],
+        "p_below_chance_one_sided": 0.0031202258149581595
+      },
+      "A2_human_specificity": {
+        "hit": 81,
+        "n": 129,
+        "rate": 0.627906976744186,
+        "ci_95": [
+          0.5384469776327399,
+          0.7113522864582056
+        ],
+        "p_above_chance_one_sided": 0.0023248479067088305
+      },
+      "A3_overall_accuracy": {
+        "hit": 168,
+        "n": 344,
+        "rate": 0.4883720930232558,
+        "ci_95": [
+          0.4343942847680862,
+          0.5425517457035087
+        ],
+        "p_two_sided": 0.7059239842772651
+      },
+      "A4_sdt": {
+        "d_prime_point": 0.0849888170178644,
+        "d_prime_bootstrap_ci": [
+          -0.1884265968670733,
+          0.36510915744201927
+        ],
+        "d_prime_bootstrap_mean": 0.0854648657017315,
+        "criterion_c_point": 0.28382058349586226,
+        "criterion_c_bootstrap_ci": [
+          0.14766805674156308,
+          0.42636347612713466
+        ],
+        "criterion_c_bootstrap_mean": 0.28588771642098754
+      }
+    },
+    "B_likert": {
+      "confidence": {
+        "n_pairs": 43,
+        "ai_mean": 3.776744186046511,
+        "human_mean": 3.7674418604651154,
+        "delta": 0.009302325581395357,
+        "cohens_d_paired": 0.0192831842365007,
+        "wilcoxon_W": 433.5,
+        "wilcoxon_p": 0.8218355154136325,
+        "ttest_t": 0.12644829518364276,
+        "ttest_p": 0.8999804872143029,
+        "bh_fdr_significant": false
+      },
+      "naturalness": {
+        "n_pairs": 43,
+        "ai_mean": 3.5860465116279068,
+        "human_mean": 3.658914728682171,
+        "delta": -0.07286821705426355,
+        "cohens_d_paired": -0.09737767441669215,
+        "wilcoxon_W": 371.0,
+        "wilcoxon_p": 0.599913715520832,
+        "ttest_t": -0.6385481136269545,
+        "ttest_p": 0.5265838437508121,
+        "bh_fdr_significant": false
+      },
+      "clarity": {
+        "n_pairs": 43,
+        "ai_mean": 3.6697674418604653,
+        "human_mean": 3.9302325581395348,
+        "delta": -0.26046511627906976,
+        "cohens_d_paired": -0.3579504958108447,
+        "wilcoxon_W": 294.5,
+        "wilcoxon_p": 0.049557221151999446,
+        "ttest_t": -2.3472383710230353,
+        "ttest_p": 0.023701810841159722,
+        "bh_fdr_significant": false
+      },
+      "engagement": {
+        "n_pairs": 43,
+        "ai_mean": 3.2139534883720926,
+        "human_mean": 3.4496124031007747,
+        "delta": -0.2356589147286822,
+        "cohens_d_paired": -0.34087038141713943,
+        "wilcoxon_W": 302.0,
+        "wilcoxon_p": 0.061449350850842306,
+        "ttest_t": -2.2352365708982664,
+        "ttest_p": 0.030775925811579587,
+        "bh_fdr_significant": false
+      },
+      "authority": {
+        "n_pairs": 43,
+        "ai_mean": 3.7720930232558136,
+        "human_mean": 3.7984496124031017,
+        "delta": -0.02635658914728682,
+        "cohens_d_paired": -0.031901849263214405,
+        "wilcoxon_W": 389.5,
+        "wilcoxon_p": 0.7828030604525451,
+        "ttest_t": -0.20919441535507755,
+        "ttest_p": 0.835307833480186,
+        "bh_fdr_significant": false
+      },
+      "quality": {
+        "n_pairs": 43,
+        "ai_mean": 3.5023255813953496,
+        "human_mean": 3.7674418604651163,
+        "delta": -0.26511627906976737,
+        "cohens_d_paired": -0.395282816600607,
+        "wilcoxon_W": 268.0,
+        "wilcoxon_p": 0.03509506299895508,
+        "ttest_t": -2.592042769571423,
+        "ttest_p": 0.01306952614857743,
+        "bh_fdr_significant": false
+      }
+    },
+    "C_per_passage": {
+      "C1_per_passage": {
+        "A": {
+          "truth": "human",
+          "condition": "human",
+          "correct": 25,
+          "n": 43,
+          "accuracy": 0.5813953488372093,
+          "ci_95": [
+            0.42126959652075174,
+            0.7298858772954422
+          ],
+          "p_two_sided_vs_chance": 0.3603776529357674
+        },
+        "B": {
+          "truth": "ai",
+          "condition": "humanized_fnword",
+          "correct": 18,
+          "n": 43,
+          "accuracy": 0.4186046511627907,
+          "ci_95": [
+            0.27011412270455787,
+            0.5787304034792482
+          ],
+          "p_two_sided_vs_chance": 0.3603776529357674
+        },
+        "C": {
+          "truth": "ai",
+          "condition": "crossmodel",
+          "correct": 20,
+          "n": 43,
+          "accuracy": 0.46511627906976744,
+          "ci_95": [
+            0.3117618790223496,
+            0.6234527398899243
+          ],
+          "p_two_sided_vs_chance": 0.7607916425613439
+        },
+        "D": {
+          "truth": "human",
+          "condition": "human",
+          "correct": 31,
+          "n": 43,
+          "accuracy": 0.7209302325581395,
+          "ci_95": [
+            0.5633130385340941,
+            0.8467107671058404
+          ],
+          "p_two_sided_vs_chance": 0.005401572654591291
+        },
+        "E": {
+          "truth": "ai",
+          "condition": "crossmodel",
+          "correct": 19,
+          "n": 43,
+          "accuracy": 0.4418604651162791,
+          "ci_95": [
+            0.29078117788106445,
+            0.6012461353915183
+          ],
+          "p_two_sided_vs_chance": 0.542384011856484
+        },
+        "F": {
+          "truth": "human",
+          "condition": "human",
+          "correct": 25,
+          "n": 43,
+          "accuracy": 0.5813953488372093,
+          "ci_95": [
+            0.42126959652075174,
+            0.7298858772954422
+          ],
+          "p_two_sided_vs_chance": 0.3603776529357674
+        },
+        "G": {
+          "truth": "ai",
+          "condition": "crossmodel",
+          "correct": 18,
+          "n": 43,
+          "accuracy": 0.4186046511627907,
+          "ci_95": [
+            0.27011412270455787,
+            0.5787304034792482
+          ],
+          "p_two_sided_vs_chance": 0.3603776529357674
+        },
+        "H": {
+          "truth": "ai",
+          "condition": "persona_dana",
+          "correct": 12,
+          "n": 43,
+          "accuracy": 0.27906976744186046,
+          "ci_95": [
+            0.15328923289415963,
+            0.4366869614659061
+          ],
+          "p_two_sided_vs_chance": 0.005401572654591291
+        }
+      },
+      "C2_condition": {
+        "by_condition": {
+          "humanized_fnword": {
+            "called_ai": 18,
+            "n": 43,
+            "detection_rate": 0.4186046511627907
+          },
+          "crossmodel": {
+            "called_ai": 57,
+            "n": 129,
+            "detection_rate": 0.4418604651162791
+          },
+          "persona_dana": {
+            "called_ai": 12,
+            "n": 43,
+            "detection_rate": 0.27906976744186046
+          }
+        },
+        "chi2_condition_x_call": {
+          "chi2": 3.591056034482757,
+          "dof": 2,
+          "p": 0.16603975734200235
+        },
+        "persona_vs_humanized": {
+          "persona_detection_rate": 0.27906976744186046,
+          "humanized_detection_rate": 0.436046511627907,
+          "fisher_odds_ratio": 0.5006451612903225,
+          "fisher_p_two_sided": 0.08172377615645576
+        }
+      },
+      "C3_reliability": {
+        "per_passage": {
+          "A": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5813953488372093,
+            "agreement_P_i": 0.5016611295681063
+          },
+          "B": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5813953488372093,
+            "agreement_P_i": 0.5016611295681063
+          },
+          "C": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5348837209302325,
+            "agreement_P_i": 0.49058693244739754
+          },
+          "D": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.7209302325581395,
+            "agreement_P_i": 0.5880398671096345
+          },
+          "E": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5581395348837209,
+            "agreement_P_i": 0.4950166112956811
+          },
+          "F": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5813953488372093,
+            "agreement_P_i": 0.5016611295681063
+          },
+          "G": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.5813953488372093,
+            "agreement_P_i": 0.5016611295681063
+          },
+          "H": {
+            "n_raters": 43,
+            "majority": "human",
+            "majority_share": 0.7209302325581395,
+            "agreement_P_i": 0.5880398671096345
+          }
+        },
+        "fleiss_kappa_across_passages": -0.004396513168442799
+      }
+    },
+    "D_best_quality": {
+      "n_responses_with_pick": 43,
+      "ai_pick_count": 22,
+      "ai_pick_rate": 0.5116279069767442,
+      "ai_base_rate": 0.625,
+      "ci_95": [
+        0.35464677305101366,
+        0.6669486461351062
+      ],
+      "p_vs_base_rate_two_sided": 0.15538348795160867,
+      "distribution": {
+        "A": 6,
+        "B": 2,
+        "C": 2,
+        "D": 6,
+        "E": 4,
+        "F": 9,
+        "G": 4,
+        "H": 10
+      }
+    },
+    "H_reasoning": {
+      "n_reasoning_entries_by_condition": {
+        "crossmodel": 65,
+        "persona_dana": 25,
+        "human": 64,
+        "humanized_fnword": 20
+      },
+      "features_full": {
+        "opinion_stance": {
+          "mentions_total": 3,
+          "mentions_by_condition": {
+            "crossmodel": 2,
+            "human": 1
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        },
+        "polish_flow": {
+          "mentions_total": 11,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 7,
+            "humanized_fnword": 1
+          },
+          "accuracy_when_mentioned": 0.6363636363636364
+        },
+        "first_person_present": {
+          "mentions_total": 28,
+          "mentions_by_condition": {
+            "crossmodel": 12,
+            "human": 8,
+            "persona_dana": 6,
+            "humanized_fnword": 2
+          },
+          "accuracy_when_mentioned": 0.35714285714285715
+        },
+        "personal_anecdote": {
+          "mentions_total": 37,
+          "mentions_by_condition": {
+            "persona_dana": 14,
+            "humanized_fnword": 5,
+            "crossmodel": 12,
+            "human": 6
+          },
+          "accuracy_when_mentioned": 0.2702702702702703
+        },
+        "technical_density": {
+          "mentions_total": 25,
+          "mentions_by_condition": {
+            "persona_dana": 2,
+            "crossmodel": 9,
+            "humanized_fnword": 4,
+            "human": 10
+          },
+          "accuracy_when_mentioned": 0.56
+        },
+        "typo_error": {
+          "mentions_total": 18,
+          "mentions_by_condition": {
+            "crossmodel": 9,
+            "human": 7,
+            "persona_dana": 2
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        },
+        "punctuation": {
+          "mentions_total": 6,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 3
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        },
+        "voice_tone": {
+          "mentions_total": 11,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "persona_dana": 4,
+            "human": 4
+          },
+          "accuracy_when_mentioned": 0.5454545454545454
+        },
+        "formal_stiff": {
+          "mentions_total": 17,
+          "mentions_by_condition": {
+            "human": 9,
+            "persona_dana": 1,
+            "crossmodel": 5,
+            "humanized_fnword": 2
+          },
+          "accuracy_when_mentioned": 0.47058823529411764
+        },
+        "first_person_absent": {
+          "mentions_total": 2,
+          "mentions_by_condition": {
+            "crossmodel": 2
+          },
+          "accuracy_when_mentioned": 1.0
+        },
+        "ai_stereotype": {
+          "mentions_total": 7,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 1,
+            "humanized_fnword": 1,
+            "persona_dana": 2
+          },
+          "accuracy_when_mentioned": 0.14285714285714285
+        },
+        "conversational": {
+          "mentions_total": 6,
+          "mentions_by_condition": {
+            "humanized_fnword": 1,
+            "human": 3,
+            "crossmodel": 1,
+            "persona_dana": 1
+          },
+          "accuracy_when_mentioned": 0.5
+        },
+        "em_dash": {
+          "mentions_total": 3,
+          "mentions_by_condition": {
+            "persona_dana": 3
+          },
+          "accuracy_when_mentioned": 0.6666666666666666
+        },
+        "discontinuity": {
+          "mentions_total": 3,
+          "mentions_by_condition": {
+            "crossmodel": 3
+          },
+          "accuracy_when_mentioned": 1.0
+        },
+        "generic_vague": {
+          "mentions_total": 7,
+          "mentions_by_condition": {
+            "humanized_fnword": 1,
+            "human": 3,
+            "crossmodel": 3
+          },
+          "accuracy_when_mentioned": 0.5714285714285714
+        },
+        "rhetorical": {
+          "mentions_total": 1,
+          "mentions_by_condition": {
+            "human": 1
+          },
+          "accuracy_when_mentioned": 1.0
+        },
+        "bullets_lists": {
+          "mentions_total": 3,
+          "mentions_by_condition": {
+            "human": 1,
+            "humanized_fnword": 1,
+            "crossmodel": 1
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        },
+        "sentence_structure": {
+          "mentions_total": 1,
+          "mentions_by_condition": {
+            "human": 1
+          },
+          "accuracy_when_mentioned": 1.0
+        }
+      },
+      "top_10_by_mentions": [
+        {
+          "feature": "personal_anecdote",
+          "mentions_total": 37,
+          "mentions_by_condition": {
+            "persona_dana": 14,
+            "humanized_fnword": 5,
+            "crossmodel": 12,
+            "human": 6
+          },
+          "accuracy_when_mentioned": 0.2702702702702703
+        },
+        {
+          "feature": "first_person_present",
+          "mentions_total": 28,
+          "mentions_by_condition": {
+            "crossmodel": 12,
+            "human": 8,
+            "persona_dana": 6,
+            "humanized_fnword": 2
+          },
+          "accuracy_when_mentioned": 0.35714285714285715
+        },
+        {
+          "feature": "technical_density",
+          "mentions_total": 25,
+          "mentions_by_condition": {
+            "persona_dana": 2,
+            "crossmodel": 9,
+            "humanized_fnword": 4,
+            "human": 10
+          },
+          "accuracy_when_mentioned": 0.56
+        },
+        {
+          "feature": "typo_error",
+          "mentions_total": 18,
+          "mentions_by_condition": {
+            "crossmodel": 9,
+            "human": 7,
+            "persona_dana": 2
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        },
+        {
+          "feature": "formal_stiff",
+          "mentions_total": 17,
+          "mentions_by_condition": {
+            "human": 9,
+            "persona_dana": 1,
+            "crossmodel": 5,
+            "humanized_fnword": 2
+          },
+          "accuracy_when_mentioned": 0.47058823529411764
+        },
+        {
+          "feature": "polish_flow",
+          "mentions_total": 11,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 7,
+            "humanized_fnword": 1
+          },
+          "accuracy_when_mentioned": 0.6363636363636364
+        },
+        {
+          "feature": "voice_tone",
+          "mentions_total": 11,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "persona_dana": 4,
+            "human": 4
+          },
+          "accuracy_when_mentioned": 0.5454545454545454
+        },
+        {
+          "feature": "ai_stereotype",
+          "mentions_total": 7,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 1,
+            "humanized_fnword": 1,
+            "persona_dana": 2
+          },
+          "accuracy_when_mentioned": 0.14285714285714285
+        },
+        {
+          "feature": "generic_vague",
+          "mentions_total": 7,
+          "mentions_by_condition": {
+            "humanized_fnword": 1,
+            "human": 3,
+            "crossmodel": 3
+          },
+          "accuracy_when_mentioned": 0.5714285714285714
+        },
+        {
+          "feature": "punctuation",
+          "mentions_total": 6,
+          "mentions_by_condition": {
+            "crossmodel": 3,
+            "human": 3
+          },
+          "accuracy_when_mentioned": 0.3333333333333333
+        }
+      ]
+    },
+    "I_machine_linkage": {
+      "per_passage": [
+        {
+          "passage": "A",
+          "truth": "human",
+          "condition": "human",
+          "db_label": "brandur_stripe_idempotency",
+          "human_ai_call_rate": 0.4186046511627907,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 4.201930392035868e-05,
+              "prediction": "human"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.0,
+              "prediction": "Unknown"
+            },
+            "binoculars": {
+              "ai_score": 0.033951055948903686,
+              "prediction": "Human"
+            }
+          }
+        },
+        {
+          "passage": "B",
+          "truth": "ai",
+          "condition": "humanized_fnword",
+          "db_label": "scribe_surgical_v10_2",
+          "human_ai_call_rate": 0.4186046511627907,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 0.793358877467635,
+              "prediction": "ai"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.87268233,
+              "prediction": "AI"
+            },
+            "binoculars": {
+              "ai_score": 0.8529739547969185,
+              "prediction": "AI"
+            }
+          }
+        },
+        {
+          "passage": "C",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "db_label": "scribe_idempotency_3way_v2",
+          "human_ai_call_rate": 0.46511627906976744,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 0.5117028680373412,
+              "prediction": "ai"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.0,
+              "prediction": "Unknown"
+            },
+            "binoculars": {
+              "ai_score": 0.0509107998716396,
+              "prediction": "Human"
+            }
+          }
+        },
+        {
+          "passage": "D",
+          "truth": "human",
+          "condition": "human",
+          "db_label": "brooker_backoff_jitter_2015",
+          "human_ai_call_rate": 0.27906976744186046,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 4.710156404171687e-05,
+              "prediction": "human"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.0,
+              "prediction": "Unknown"
+            },
+            "binoculars": {
+              "ai_score": 0.8740574351140751,
+              "prediction": "AI"
+            }
+          }
+        },
+        {
+          "passage": "E",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "db_label": "scribe_backoff_3way_v2",
+          "human_ai_call_rate": 0.4418604651162791,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 0.31781728833005374,
+              "prediction": "human"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.36775818,
+              "prediction": "Human"
+            },
+            "binoculars": {
+              "ai_score": 0.03754277794411054,
+              "prediction": "Human"
+            }
+          }
+        },
+        {
+          "passage": "F",
+          "truth": "human",
+          "condition": "human",
+          "db_label": "olah_backprop_2015",
+          "human_ai_call_rate": 0.4186046511627907,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.0,
+              "prediction": "Human"
+            },
+            "gptzero_api": {
+              "ai_score": 0.04912032913605694,
+              "prediction": "human"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.0,
+              "prediction": "Unknown"
+            },
+            "binoculars": {
+              "ai_score": 0.8505187485460305,
+              "prediction": "AI"
+            }
+          }
+        },
+        {
+          "passage": "G",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "db_label": "scribe_bloom_filter_3way_v2",
+          "human_ai_call_rate": 0.4186046511627907,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 0.15921616656460502,
+              "prediction": "Mixed"
+            },
+            "gptzero_api": {
+              "ai_score": 0.41854322936742494,
+              "prediction": "ai"
+            },
+            "copyleaks_api": {
+              "ai_score": 0.0,
+              "prediction": "Unknown"
+            },
+            "binoculars": {
+              "ai_score": 0.022173677820613857,
+              "prediction": "Human"
+            }
+          }
+        },
+        {
+          "passage": "H",
+          "truth": "ai",
+          "condition": "persona_dana",
+          "db_label": "scribe_persona_opus_t1",
+          "human_ai_call_rate": 0.27906976744186046,
+          "human_n": 43,
+          "detectors": {
+            "pangram_api": {
+              "ai_score": 1.0,
+              "prediction": "We believe that this document is fully AI-generated"
+            },
+            "gptzero_api": {
+              "ai_score": 0.999958396878982,
+              "prediction": "ai"
+            },
+            "copyleaks_api": {
+              "ai_score": 1.0,
+              "prediction": "AI"
+            },
+            "binoculars": {
+              "ai_score": 0.821581783275429,
+              "prediction": "AI"
+            }
+          }
+        }
+      ],
+      "missing_scores": [],
+      "spearman_all_passages": {
+        "pangram_api": {
+          "spearman_rho": -0.45144442489936065,
+          "p_two_sided": 0.2615167609566244,
+          "n": 8
+        },
+        "gptzero_api": {
+          "spearman_rho": 0.025540472211939846,
+          "p_two_sided": 0.9521324360915857,
+          "n": 8
+        },
+        "copyleaks_api": {
+          "spearman_rho": -0.2194521509927448,
+          "p_two_sided": 0.6015471628650095,
+          "n": 8
+        },
+        "binoculars": {
+          "spearman_rho": -0.4469582637089474,
+          "p_two_sided": 0.26687618898831844,
+          "n": 8
+        }
+      },
+      "spearman_ai_only": {
+        "pangram_api": {
+          "spearman_rho": -0.8029550685469662,
+          "p_two_sided": 0.10183797037740709,
+          "n": 5
+        },
+        "gptzero_api": {
+          "spearman_rho": -0.6155870112510925,
+          "p_two_sided": 0.2689977701158222,
+          "n": 5
+        },
+        "copyleaks_api": {
+          "spearman_rho": -0.7105263157894738,
+          "p_two_sided": 0.1786189192398148,
+          "n": 5
+        },
+        "binoculars": {
+          "spearman_rho": -0.30779350562554625,
+          "p_two_sided": 0.614384002810333,
+          "n": 5
+        }
+      },
+      "crowd_vs_detector_kappa": {
+        "pangram_api": {
+          "cohens_kappa_crowd_vs_detector": 0.0,
+          "n_passages": 8,
+          "agreement_rate": 0.875,
+          "crowd_labels": [
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human"
+          ],
+          "detector_labels": [
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "ai"
+          ]
+        },
+        "gptzero_api": {
+          "cohens_kappa_crowd_vs_detector": 0.0,
+          "n_passages": 8,
+          "agreement_rate": 0.625,
+          "crowd_labels": [
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human"
+          ],
+          "detector_labels": [
+            "human",
+            "ai",
+            "ai",
+            "human",
+            "human",
+            "human",
+            "human",
+            "ai"
+          ]
+        },
+        "copyleaks_api": {
+          "cohens_kappa_crowd_vs_detector": 0.0,
+          "n_passages": 8,
+          "agreement_rate": 0.75,
+          "crowd_labels": [
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human"
+          ],
+          "detector_labels": [
+            "human",
+            "ai",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "ai"
+          ]
+        },
+        "binoculars": {
+          "cohens_kappa_crowd_vs_detector": 0.0,
+          "n_passages": 8,
+          "agreement_rate": 0.5,
+          "crowd_labels": [
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human",
+            "human"
+          ],
+          "detector_labels": [
+            "human",
+            "ai",
+            "human",
+            "ai",
+            "human",
+            "ai",
+            "human",
+            "ai"
+          ]
+        }
+      },
+      "detector_accuracy_vs_truth": {
+        "pangram_api": {
+          "correct": 4,
+          "n": 8,
+          "accuracy": 0.5
+        },
+        "gptzero_api": {
+          "correct": 6,
+          "n": 8,
+          "accuracy": 0.75
+        },
+        "copyleaks_api": {
+          "correct": 5,
+          "n": 8,
+          "accuracy": 0.625
+        },
+        "binoculars": {
+          "correct": 3,
+          "n": 8,
+          "accuracy": 0.375
+        }
+      },
+      "human_crowd_accuracy_vs_truth": {
+        "overall": 0.375
+      }
+    },
+    "J_quality_correlations": {
+      "per_passage_table": [
+        {
+          "passage": "A",
+          "truth": "human",
+          "condition": "human",
+          "quality_mean": 3.6744186046511627,
+          "composite_quality_mean": 3.6686046511627906,
+          "naturalness_mean": 3.5813953488372094,
+          "clarity_mean": 3.86046511627907,
+          "density_variance": 0.0,
+          "burstiness": 0.543,
+          "first_person_per_1k": 1.41,
+          "pangram_api": 0.0,
+          "gptzero_api": 4.201930392035868e-05,
+          "copyleaks_api": 0.0,
+          "binoculars": 0.033951055948903686
+        },
+        {
+          "passage": "B",
+          "truth": "ai",
+          "condition": "humanized_fnword",
+          "quality_mean": 3.5348837209302326,
+          "composite_quality_mean": 3.5639534883720927,
+          "naturalness_mean": 3.511627906976744,
+          "clarity_mean": 3.8372093023255816,
+          "density_variance": 0.01334,
+          "burstiness": 0.526,
+          "first_person_per_1k": 0.0,
+          "pangram_api": 0.0,
+          "gptzero_api": 0.793358877467635,
+          "copyleaks_api": 0.87268233,
+          "binoculars": 0.8529739547969185
+        },
+        {
+          "passage": "C",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "quality_mean": 3.4186046511627906,
+          "composite_quality_mean": 3.3313953488372094,
+          "naturalness_mean": 3.302325581395349,
+          "clarity_mean": 3.604651162790698,
+          "density_variance": 0.034016,
+          "burstiness": 0.526,
+          "first_person_per_1k": 0.0,
+          "pangram_api": 0.0,
+          "gptzero_api": 0.5117028680373412,
+          "copyleaks_api": 0.0,
+          "binoculars": 0.0509107998716396
+        },
+        {
+          "passage": "D",
+          "truth": "human",
+          "condition": "human",
+          "quality_mean": 3.7209302325581395,
+          "composite_quality_mean": 3.7267441860465116,
+          "naturalness_mean": 3.8372093023255816,
+          "clarity_mean": 3.953488372093023,
+          "density_variance": 0.0,
+          "burstiness": 0.415,
+          "first_person_per_1k": 1.02,
+          "pangram_api": 0.0,
+          "gptzero_api": 4.710156404171687e-05,
+          "copyleaks_api": 0.0,
+          "binoculars": 0.8740574351140751
+        },
+        {
+          "passage": "E",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "quality_mean": 3.302325581395349,
+          "composite_quality_mean": 3.3430232558139537,
+          "naturalness_mean": 3.255813953488372,
+          "clarity_mean": 3.511627906976744,
+          "density_variance": 0.096034,
+          "burstiness": 0.463,
+          "first_person_per_1k": 0.84,
+          "pangram_api": 0.0,
+          "gptzero_api": 0.31781728833005374,
+          "copyleaks_api": 0.36775818,
+          "binoculars": 0.03754277794411054
+        },
+        {
+          "passage": "F",
+          "truth": "human",
+          "condition": "human",
+          "quality_mean": 3.9069767441860463,
+          "composite_quality_mean": 3.8139534883720927,
+          "naturalness_mean": 3.558139534883721,
+          "clarity_mean": 3.9767441860465116,
+          "density_variance": 0.0,
+          "burstiness": 0.582,
+          "first_person_per_1k": 5.38,
+          "pangram_api": 0.0,
+          "gptzero_api": 0.04912032913605694,
+          "copyleaks_api": 0.0,
+          "binoculars": 0.8505187485460305
+        },
+        {
+          "passage": "G",
+          "truth": "ai",
+          "condition": "crossmodel",
+          "quality_mean": 3.2093023255813953,
+          "composite_quality_mean": 3.3779069767441863,
+          "naturalness_mean": 3.6744186046511627,
+          "clarity_mean": 3.4186046511627906,
+          "density_variance": 0.112333,
+          "burstiness": 0.58,
+          "first_person_per_1k": 0.76,
+          "pangram_api": 0.15921616656460502,
+          "gptzero_api": 0.41854322936742494,
+          "copyleaks_api": 0.0,
+          "binoculars": 0.022173677820613857
+        },
+        {
+          "passage": "H",
+          "truth": "ai",
+          "condition": "persona_dana",
+          "quality_mean": 4.046511627906977,
+          "composite_quality_mean": 4.0813953488372094,
+          "naturalness_mean": 4.186046511627907,
+          "clarity_mean": 3.9767441860465116,
+          "density_variance": 0.127726,
+          "burstiness": 1.247,
+          "first_person_per_1k": 19.2,
+          "pangram_api": 1.0,
+          "gptzero_api": 0.999958396878982,
+          "copyleaks_api": 1.0,
+          "binoculars": 0.821581783275429
+        }
+      ],
+      "spearman": {
+        "linguistic_all_passages": {
+          "_composite": {
+            "density_variance": {
+              "rho": -0.19518001458970666,
+              "p": 0.6432255386372303,
+              "n": 8
+            },
+            "consecutive_similarity_mean": {
+              "rho": 0.19047619047619052,
+              "p": 0.6514014957024814,
+              "n": 8
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.023809523809523815,
+              "p": 0.9553740118158806,
+              "n": 8
+            },
+            "redundancy_mean": {
+              "rho": -0.3571428571428572,
+              "p": 0.38512064355625614,
+              "n": 8
+            },
+            "burstiness": {
+              "rho": 0.5149792926227014,
+              "p": 0.19154931341586579,
+              "n": 8
+            },
+            "sent_mean_len": {
+              "rho": -0.16766767666785626,
+              "p": 0.691465351646736,
+              "n": 8
+            },
+            "type_token_ratio": {
+              "rho": -0.6666666666666669,
+              "p": 0.07098765432098755,
+              "n": 8
+            },
+            "first_person_per_1k": {
+              "rho": 0.8503146459584138,
+              "p": 0.007471414639953466,
+              "n": 8
+            },
+            "fpp_per_1k": {
+              "rho": -0.09523809523809526,
+              "p": 0.8225054302036114,
+              "n": 8
+            },
+            "contractions_per_1k": {
+              "rho": 0.9761904761904763,
+              "p": 3.314396026200098e-05,
+              "n": 8
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.5773502691896258,
+              "p": 0.13397459621556115,
+              "n": 8
+            },
+            "hedging_per_1k": {
+              "rho": 0.19047619047619052,
+              "p": 0.6514014957024814,
+              "n": 8
+            }
+          },
+          "quality": {
+            "density_variance": {
+              "rho": -0.29277002188455997,
+              "p": 0.4816178143121546,
+              "n": 8
+            },
+            "consecutive_similarity_mean": {
+              "rho": 0.2380952380952381,
+              "p": 0.5701563208157683,
+              "n": 8
+            },
+            "embedding_surprisal_variance": {
+              "rho": 0.023809523809523815,
+              "p": 0.9553740118158806,
+              "n": 8
+            },
+            "redundancy_mean": {
+              "rho": -0.261904761904762,
+              "p": 0.530922861565801,
+              "n": 8
+            },
+            "burstiness": {
+              "rho": 0.3952166664313755,
+              "p": 0.3325171079338275,
+              "n": 8
+            },
+            "sent_mean_len": {
+              "rho": -0.4071929290505081,
+              "p": 0.31670918491612826,
+              "n": 8
+            },
+            "type_token_ratio": {
+              "rho": -0.7142857142857144,
+              "p": 0.046528232284167255,
+              "n": 8
+            },
+            "first_person_per_1k": {
+              "rho": 0.7784570702436183,
+              "p": 0.022867333969736833,
+              "n": 8
+            },
+            "fpp_per_1k": {
+              "rho": -0.19047619047619052,
+              "p": 0.6514014957024814,
+              "n": 8
+            },
+            "contractions_per_1k": {
+              "rho": 0.9285714285714287,
+              "p": 0.0008629681828999767,
+              "n": 8
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.5773502691896258,
+              "p": 0.13397459621556115,
+              "n": 8
+            },
+            "hedging_per_1k": {
+              "rho": 0.04761904761904763,
+              "p": 0.9108491685195836,
+              "n": 8
+            }
+          },
+          "naturalness": {
+            "density_variance": {
+              "rho": 0.09759000729485333,
+              "p": 0.8181772027352759,
+              "n": 8
+            },
+            "consecutive_similarity_mean": {
+              "rho": -0.04761904761904763,
+              "p": 0.9108491685195836,
+              "n": 8
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.5714285714285715,
+              "p": 0.13895995716070672,
+              "n": 8
+            },
+            "redundancy_mean": {
+              "rho": -0.523809523809524,
+              "p": 0.1827207505397148,
+              "n": 8
+            },
+            "burstiness": {
+              "rho": 0.4191691916696406,
+              "p": 0.30126663266334447,
+              "n": 8
+            },
+            "sent_mean_len": {
+              "rho": -0.09581010095306072,
+              "p": 0.8214524032504529,
+              "n": 8
+            },
+            "type_token_ratio": {
+              "rho": -0.2380952380952381,
+              "p": 0.5701563208157683,
+              "n": 8
+            },
+            "first_person_per_1k": {
+              "rho": 0.5868368683374969,
+              "p": 0.12619898553608944,
+              "n": 8
+            },
+            "fpp_per_1k": {
+              "rho": 0.14285714285714288,
+              "p": 0.735764859879812,
+              "n": 8
+            },
+            "contractions_per_1k": {
+              "rho": 0.7619047619047621,
+              "p": 0.028004939153071805,
+              "n": 8
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.5773502691896258,
+              "p": 0.13397459621556115,
+              "n": 8
+            },
+            "hedging_per_1k": {
+              "rho": 0.6904761904761906,
+              "p": 0.057990318164572716,
+              "n": 8
+            }
+          },
+          "clarity": {
+            "density_variance": {
+              "rho": -0.36816052025536194,
+              "p": 0.3695392210364741,
+              "n": 8
+            },
+            "consecutive_similarity_mean": {
+              "rho": 0.29940656547831473,
+              "p": 0.4712605287015584,
+              "n": 8
+            },
+            "embedding_surprisal_variance": {
+              "rho": 0.1077863635721933,
+              "p": 0.7994604266184203,
+              "n": 8
+            },
+            "redundancy_mean": {
+              "rho": -0.2395252523826518,
+              "p": 0.5677721522592929,
+              "n": 8
+            },
+            "burstiness": {
+              "rho": 0.38554216867469876,
+              "p": 0.34554909033976167,
+              "n": 8
+            },
+            "sent_mean_len": {
+              "rho": -0.39759036144578314,
+              "p": 0.32935525869871035,
+              "n": 8
+            },
+            "type_token_ratio": {
+              "rho": -0.7545045450053531,
+              "p": 0.030512759033309068,
+              "n": 8
+            },
+            "first_person_per_1k": {
+              "rho": 0.7710843373493975,
+              "p": 0.02507627312135861,
+              "n": 8
+            },
+            "fpp_per_1k": {
+              "rho": -0.2155727271443866,
+              "p": 0.6081490663684049,
+              "n": 8
+            },
+            "contractions_per_1k": {
+              "rho": 0.9221722216732094,
+              "p": 0.001110817357806172,
+              "n": 8
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.4978438881870133,
+              "p": 0.209311808425736,
+              "n": 8
+            },
+            "hedging_per_1k": {
+              "rho": 0.0,
+              "p": 1.0,
+              "n": 8
+            }
+          }
+        },
+        "linguistic_ai_only": {
+          "_composite": {
+            "density_variance": {
+              "rho": 0.39999999999999997,
+              "p": 0.5046315754686912,
+              "n": 5
+            },
+            "consecutive_similarity_mean": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.49999999999999994,
+              "p": 0.3910022189557703,
+              "n": 5
+            },
+            "redundancy_mean": {
+              "rho": -0.49999999999999994,
+              "p": 0.3910022189557703,
+              "n": 5
+            },
+            "burstiness": {
+              "rho": 0.6668859288553503,
+              "p": 0.21889398131323148,
+              "n": 5
+            },
+            "sent_mean_len": {
+              "rho": 0.0,
+              "p": 1.0,
+              "n": 5
+            },
+            "type_token_ratio": {
+              "rho": -0.6,
+              "p": 0.28475697986529386,
+              "n": 5
+            },
+            "first_person_per_1k": {
+              "rho": 0.46169025843831935,
+              "p": 0.43376615616902764,
+              "n": 5
+            },
+            "fpp_per_1k": {
+              "rho": 0.09999999999999999,
+              "p": 0.8728885715695384,
+              "n": 5
+            },
+            "contractions_per_1k": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.7071067811865475,
+              "p": 0.18169011381620942,
+              "n": 5
+            },
+            "hedging_per_1k": {
+              "rho": 0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            }
+          },
+          "quality": {
+            "density_variance": {
+              "rho": 0.0,
+              "p": 1.0,
+              "n": 5
+            },
+            "consecutive_similarity_mean": {
+              "rho": -0.09999999999999999,
+              "p": 0.8728885715695384,
+              "n": 5
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "redundancy_mean": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "burstiness": {
+              "rho": 0.35909242322980395,
+              "p": 0.5528147466433508,
+              "n": 5
+            },
+            "sent_mean_len": {
+              "rho": -0.6,
+              "p": 0.28475697986529386,
+              "n": 5
+            },
+            "type_token_ratio": {
+              "rho": -0.7999999999999999,
+              "p": 0.10408803866182788,
+              "n": 5
+            },
+            "first_person_per_1k": {
+              "rho": 0.15389675281277312,
+              "p": 0.8048288166080632,
+              "n": 5
+            },
+            "fpp_per_1k": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "contractions_per_1k": {
+              "rho": 0.7,
+              "p": 0.1881204043741873,
+              "n": 5
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.7071067811865475,
+              "p": 0.18169011381620942,
+              "n": 5
+            },
+            "hedging_per_1k": {
+              "rho": -0.09999999999999999,
+              "p": 0.8728885715695384,
+              "n": 5
+            }
+          },
+          "naturalness": {
+            "density_variance": {
+              "rho": 0.6,
+              "p": 0.28475697986529386,
+              "n": 5
+            },
+            "consecutive_similarity_mean": {
+              "rho": -0.7,
+              "p": 0.1881204043741873,
+              "n": 5
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "redundancy_mean": {
+              "rho": -0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "burstiness": {
+              "rho": 0.9746794344808963,
+              "p": 0.004818230468198566,
+              "n": 5
+            },
+            "sent_mean_len": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "type_token_ratio": {
+              "rho": -0.49999999999999994,
+              "p": 0.3910022189557703,
+              "n": 5
+            },
+            "first_person_per_1k": {
+              "rho": 0.35909242322980395,
+              "p": 0.5528147466433508,
+              "n": 5
+            },
+            "fpp_per_1k": {
+              "rho": 0.6,
+              "p": 0.28475697986529386,
+              "n": 5
+            },
+            "contractions_per_1k": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.7071067811865475,
+              "p": 0.18169011381620942,
+              "n": 5
+            },
+            "hedging_per_1k": {
+              "rho": 0.7999999999999999,
+              "p": 0.10408803866182788,
+              "n": 5
+            }
+          },
+          "clarity": {
+            "density_variance": {
+              "rho": 0.0,
+              "p": 1.0,
+              "n": 5
+            },
+            "consecutive_similarity_mean": {
+              "rho": -0.09999999999999999,
+              "p": 0.8728885715695384,
+              "n": 5
+            },
+            "embedding_surprisal_variance": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "redundancy_mean": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "burstiness": {
+              "rho": 0.35909242322980395,
+              "p": 0.5528147466433508,
+              "n": 5
+            },
+            "sent_mean_len": {
+              "rho": -0.6,
+              "p": 0.28475697986529386,
+              "n": 5
+            },
+            "type_token_ratio": {
+              "rho": -0.7999999999999999,
+              "p": 0.10408803866182788,
+              "n": 5
+            },
+            "first_person_per_1k": {
+              "rho": 0.15389675281277312,
+              "p": 0.8048288166080632,
+              "n": 5
+            },
+            "fpp_per_1k": {
+              "rho": -0.3,
+              "p": 0.623837664781073,
+              "n": 5
+            },
+            "contractions_per_1k": {
+              "rho": 0.7,
+              "p": 0.1881204043741873,
+              "n": 5
+            },
+            "em_dashes_per_1k": {
+              "rho": 0.7071067811865475,
+              "p": 0.18169011381620942,
+              "n": 5
+            },
+            "hedging_per_1k": {
+              "rho": -0.09999999999999999,
+              "p": 0.8728885715695384,
+              "n": 5
+            }
+          }
+        },
+        "detector_all_passages": {
+          "_composite": {
+            "pangram_api": {
+              "rho": 0.3273268353539886,
+              "p": 0.42869150723531324,
+              "n": 8
+            },
+            "gptzero_api": {
+              "rho": -0.07142857142857144,
+              "p": 0.8665262706759088,
+              "n": 8
+            },
+            "copyleaks_api": {
+              "rho": 0.2182178902359924,
+              "p": 0.6036450565101362,
+              "n": 8
+            },
+            "binoculars": {
+              "rho": 0.4523809523809524,
+              "p": 0.2604047674368853,
+              "n": 8
+            }
+          },
+          "quality": {
+            "pangram_api": {
+              "rho": 0.10910894511799621,
+              "p": 0.7970385741881916,
+              "n": 8
+            },
+            "gptzero_api": {
+              "rho": -0.023809523809523815,
+              "p": 0.9553740118158806,
+              "n": 8
+            },
+            "copyleaks_api": {
+              "rho": 0.2182178902359924,
+              "p": 0.6036450565101362,
+              "n": 8
+            },
+            "binoculars": {
+              "rho": 0.5952380952380953,
+              "p": 0.11952980613879269,
+              "n": 8
+            }
+          },
+          "naturalness": {
+            "pangram_api": {
+              "rho": 0.6546536707079772,
+              "p": 0.07814074941121583,
+              "n": 8
+            },
+            "gptzero_api": {
+              "rho": 0.0,
+              "p": 1.0,
+              "n": 8
+            },
+            "copyleaks_api": {
+              "rho": 0.02727723627949905,
+              "p": 0.9488805457664998,
+              "n": 8
+            },
+            "binoculars": {
+              "rho": 0.14285714285714288,
+              "p": 0.735764859879812,
+              "n": 8
+            }
+          },
+          "clarity": {
+            "pangram_api": {
+              "rho": 0.039201521424889404,
+              "p": 0.9265724167384364,
+              "n": 8
+            },
+            "gptzero_api": {
+              "rho": -0.08383383833392813,
+              "p": 0.8435464923328299,
+              "n": 8
+            },
+            "copyleaks_api": {
+              "rho": 0.1509258574858242,
+              "p": 0.7212820032932661,
+              "n": 8
+            },
+            "binoculars": {
+              "rho": 0.6107893935757621,
+              "p": 0.10772123669287101,
+              "n": 8
+            }
+          }
+        },
+        "detector_ai_only": {
+          "_composite": {
+            "pangram_api": {
+              "rho": 0.6708203932499368,
+              "p": 0.21516994256955022,
+              "n": 5
+            },
+            "gptzero_api": {
+              "rho": 0.7,
+              "p": 0.1881204043741873,
+              "n": 5
+            },
+            "copyleaks_api": {
+              "rho": 0.8207826816681234,
+              "p": 0.08858700531354378,
+              "n": 5
+            },
+            "binoculars": {
+              "rho": 0.49999999999999994,
+              "p": 0.3910022189557703,
+              "n": 5
+            }
+          },
+          "quality": {
+            "pangram_api": {
+              "rho": 0.22360679774997896,
+              "p": 0.7176856442107858,
+              "n": 5
+            },
+            "gptzero_api": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "copyleaks_api": {
+              "rho": 0.8207826816681234,
+              "p": 0.08858700531354378,
+              "n": 5
+            },
+            "binoculars": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            }
+          },
+          "naturalness": {
+            "pangram_api": {
+              "rho": 0.8944271909999159,
+              "p": 0.04051932635383402,
+              "n": 5
+            },
+            "gptzero_api": {
+              "rho": 0.7,
+              "p": 0.1881204043741873,
+              "n": 5
+            },
+            "copyleaks_api": {
+              "rho": 0.4103913408340617,
+              "p": 0.49253578170279744,
+              "n": 5
+            },
+            "binoculars": {
+              "rho": 0.19999999999999998,
+              "p": 0.7470600781046621,
+              "n": 5
+            }
+          },
+          "clarity": {
+            "pangram_api": {
+              "rho": 0.22360679774997896,
+              "p": 0.7176856442107858,
+              "n": 5
+            },
+            "gptzero_api": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            },
+            "copyleaks_api": {
+              "rho": 0.8207826816681234,
+              "p": 0.08858700531354378,
+              "n": 5
+            },
+            "binoculars": {
+              "rho": 0.8999999999999998,
+              "p": 0.03738607346849874,
+              "n": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+scipy>=1.11
+numpy>=1.26
+matplotlib>=3.7
+# Standard library modules used (no install needed):
+# sqlite3, json, argparse, statistics, re, pathlib, datetime, collections

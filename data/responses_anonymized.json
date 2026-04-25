@@ -1,0 +1,5212 @@
+{
+  "count": 43,
+  "submissionCounter": 43,
+  "maxResponses": 45,
+  "closed": false,
+  "responses": [
+    {
+      "sessionId": "696c1dbc-f3fb-47a5-86f4-7bcae8f58dc8",
+      "startedAt": "2026-04-20T20:56:24.619Z",
+      "completedAt": "2026-04-20T22:04:50.681Z",
+      "passageOrder": [
+        "C",
+        "E",
+        "B",
+        "F",
+        "G",
+        "A",
+        "H",
+        "D"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Technical Support Engineer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "Based on the start of this article with having an opinion which AI models normally don't have extreme opinions. ",
+          "timeOnPage": 357
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The flow feels natural but very polished. The explanations are straight to the point.",
+          "timeOnPage": 101
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 19
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 9
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Written in more of a first-person point of view.",
+          "timeOnPage": 2
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 3
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 8
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 12
+        }
+      },
+      "debrief": {
+        "features": "I looked for first-person narrative point of view, the flow of the article and if it's more of a natural storyteller or extremely technical without additional commentary.",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-20T22:04:51.696Z",
+        "country": "US",
+        "responseNumber": 1
+      }
+    },
+    {
+      "sessionId": "75289405-dbc5-4288-99e9-1c9a38ecb6e4",
+      "startedAt": "2026-04-21T13:55:51.389Z",
+      "completedAt": "2026-04-21T14:44:08.823Z",
+      "passageOrder": [
+        "H",
+        "G",
+        "E",
+        "F",
+        "A",
+        "D",
+        "B",
+        "C"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 2
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The writing was specific and had personal tones. There was little to technical details included and made it more difficult to understand from a technical perspective. ",
+          "timeOnPage": 179
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 63
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 55
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 86
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 33
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 33
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 25
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 24
+        }
+      },
+      "debrief": {
+        "features": "The difference between the AI generated text and Human written content is readily apparent. Human writing tends to convey more feeling and emotional context, capturing the impact of a situation through nuanced language. In contrast, the AI generated text is more technical and objective, focusing on factual descriptions while conveying little, if any, emotions within the wording. As a result, AI writing often explains what happened and possible resolutions in a clinical manner, without reflecting the human experience or emotional weight of the situation.",
+        "comments": "Thank you, liked this study, hope it helps",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T14:44:08.349Z",
+        "country": "US",
+        "responseNumber": 2
+      }
+    },
+    {
+      "sessionId": "e12173de-8e6f-4c0d-b8d6-3b1b70a8d508",
+      "startedAt": "2026-04-21T15:35:23.916Z",
+      "completedAt": "2026-04-21T15:42:24.450Z",
+      "passageOrder": [
+        "E",
+        "F",
+        "H",
+        "B",
+        "A",
+        "G",
+        "C",
+        "D"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Technical Support Engineer",
+        "readFrequency": "Daily",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 84
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 65
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 31
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 26
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 33
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 16
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 4,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 14
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 19
+        }
+      },
+      "debrief": {
+        "features": "",
+        "comments": "",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T15:42:25.805Z",
+        "country": "US",
+        "responseNumber": 3
+      }
+    },
+    {
+      "sessionId": "78a37b38-434d-43d3-b763-444571d2dd1e",
+      "startedAt": "2026-04-21T13:21:10.427Z",
+      "completedAt": "2026-04-21T16:42:01.420Z",
+      "passageOrder": [
+        "E",
+        "D",
+        "H",
+        "C",
+        "F",
+        "A",
+        "G",
+        "B"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Senior / Escalation Engineer",
+        "readFrequency": "Daily",
+        "aiConfidence": 2
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The tone, the number of details, it sounds like a narrative instead of like an executive summary. There's an uppercase letter missing and a couple of punctuation errors",
+          "timeOnPage": 397
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Natural expressions, sounds like someone is explaining naturally but with some formality. Even though I saw no evident punctuation errors, the writer used first person narrative",
+          "timeOnPage": 275
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The language and tone are not formal, and they're narrating a story and explaining the issue afterwards, it's not an analysis, it sounds more like a developer teaching students or explaining to other developer an incident he was part of",
+          "timeOnPage": 278
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 2,
+          "quality": 5,
+          "reasoning": "No narrative, it's a cold analysis. Even though he/it used first person at some points, the narrative seems cold and not engaging. It looks to me like a KB instead of a natural conversation. It could have been written by a human with that objective in mind though",
+          "timeOnPage": 316
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 2,
+          "quality": 5,
+          "reasoning": "Not narrative at all. No chaos. Almost everything looks \"too perfect\". It's clear and useful. I've seen people writing like that, but it's not natural, it would be \"ultraprocessed writing\". A human can write like that but not at the first try",
+          "timeOnPage": 256
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "It's a perfectly written paper, but even though I see no chaos or anything similar, something in it makes it feel natural somehow. Possibly giving clear and realistic examples. I wouldn't bet it was either a human or AI by analysis, you could say it's just a gut feeling, even though it looks like AI, somehow I think it was written by a human",
+          "timeOnPage": 319
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The narrative, the nicely imperfect structure, the way the problem and solution is explained",
+          "timeOnPage": 190
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "I think it's a duplicate of another story in this test, or very very similar. It looks too perfect and the narrator sounds detached from the story",
+          "timeOnPage": 185
+        }
+      },
+      "debrief": {
+        "features": "Narrative; I expect to see that the narrator is attached to the story, telling something he actually lived. Language; I expect to see a natural language, with informal expressions. Also explaining some events in first person. Structure; I expect the human version to have some imperfections, too perfect makes me feel suspicious. Mistakes or omissions; I expect to find some in a human text, at least subtle",
+        "comments": "I don't remember which one had the highest quality, there was one that called my attention, but I didn't write down the number of story it was, I think it was 6",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T16:42:02.482Z",
+        "country": "CL",
+        "responseNumber": 4
+      }
+    },
+    {
+      "sessionId": "7d79bad9-d6e4-41f4-a731-ac3ebb3749a8",
+      "startedAt": "2026-04-21T16:32:34.263Z",
+      "completedAt": "2026-04-21T16:46:22.467Z",
+      "passageOrder": [
+        "E",
+        "H",
+        "F",
+        "G",
+        "C",
+        "A",
+        "D",
+        "B"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Lots of very detailed coding language, moreso than a typical engineer would use",
+          "timeOnPage": 102
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 96
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 75
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 128
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 72
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 69
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 82
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 92
+        }
+      },
+      "debrief": {
+        "features": "Over explanation of engineering terms. There's a limit to how much technical language you should use before you lose track of the point.",
+        "comments": "I have no idea which passage was in which order at this point so that last question definitely a random guess.",
+        "bestAi": "C"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T16:46:22.853Z",
+        "country": "US",
+        "responseNumber": 5
+      }
+    },
+    {
+      "sessionId": "0f748a2a-3f91-43ef-a17b-17bf015189dd",
+      "startedAt": "2026-04-21T16:47:22.613Z",
+      "completedAt": "2026-04-21T16:56:41.086Z",
+      "passageOrder": [
+        "F",
+        "E",
+        "C",
+        "A",
+        "B",
+        "G",
+        "H",
+        "D"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 128
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 53
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 48
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 50
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 75
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 22
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 39
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 26
+        }
+      },
+      "debrief": {
+        "features": "tone and perspective",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T16:56:41.699Z",
+        "country": "CA",
+        "responseNumber": 6
+      }
+    },
+    {
+      "sessionId": "f0f39799-3d23-443c-8477-f25b70fcec02",
+      "startedAt": "2026-04-21T16:40:32.208Z",
+      "completedAt": "2026-04-21T17:10:14.640Z",
+      "passageOrder": [
+        "B",
+        "H",
+        "C",
+        "D",
+        "G",
+        "F",
+        "A",
+        "E"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The use of certain language sounds too formal as well as the way the technical process was described and written with keywords capitalized seemed more in line with how an AI would respond.",
+          "timeOnPage": 64
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "The informal nature and personal experience and first person depiction gives the text a strong human feel.",
+          "timeOnPage": 71
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "Speaking from third person and a lack of personal detail in addition to the technical parts being written in capital letters are all signs of AI generation.",
+          "timeOnPage": 89
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "There is some speaking from a first person perspective which AI doesn't do. This makes it clearer that it is human-generated.",
+          "timeOnPage": 419
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 2,
+          "reasoning": "There is a personal telling of experience and the writing isn't as stereotypically formal as you would expect from a AI-generated response.",
+          "timeOnPage": 88
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 1,
+          "clarity": 4,
+          "engagement": 1,
+          "authority": 1,
+          "quality": 3,
+          "reasoning": "The use of very formal language and technical jargon is more characteristic of AI than human-written content.",
+          "timeOnPage": 321
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "The language is very objective and formal, with the technical keywords written and formatted in a way synonymous with AI-generated responses.",
+          "timeOnPage": 108
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "There are some minor indications of personal experience and protocol which suggests this was written by a human. The lack of an overly-formal response also leads me to believe it's human-written.",
+          "timeOnPage": 146
+        }
+      },
+      "debrief": {
+        "features": "Formal language, personal experience and examples from their life. How the text is formatted can also play a part with keywords being capitalised or not capitalised which can indicate one way or the other.",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T17:10:14.297Z",
+        "country": "GB",
+        "responseNumber": 7
+      }
+    },
+    {
+      "sessionId": "73771f02-37a4-4e7e-be6d-7d315aedacd8",
+      "startedAt": "2026-04-21T17:03:27.809Z",
+      "completedAt": "2026-04-21T17:20:11.645Z",
+      "passageOrder": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H",
+        "D",
+        "C",
+        "F"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Solutions / Systems Architect",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It didn't use some of the typical tropes - comparisons, mentioning things in threes, it's not this - it's that. ",
+          "timeOnPage": 149
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It felt much more casual and engaging.",
+          "timeOnPage": 160
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "I'm really unsure on this one.",
+          "timeOnPage": 112
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "This one really felt like a person had experienced it and relayed the details.",
+          "timeOnPage": 62
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It had all the tell-tale signs of an AI writer: the em dash, the emotional grabs, the structure in general felt like AI was asked to write this like they were a person.",
+          "timeOnPage": 86
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "This one again felt like a human from the perspective shared, and a lack of those AI-centric writing styles.",
+          "timeOnPage": 92
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "It seemed to meander a bit, a human trait.",
+          "timeOnPage": 86
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The narrative tone.",
+          "timeOnPage": 95
+        }
+      },
+      "debrief": {
+        "features": "em dashes, examples in groups of 3, a strong emotional pull at the beginning of a new thought, It's not this thing, it's THIS thing. Listing ideas in 3. ",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T17:20:11.804Z",
+        "country": "US",
+        "responseNumber": 8
+      }
+    },
+    {
+      "sessionId": "e5b391b1-1cd1-4d1c-95c9-147cdece0e60",
+      "startedAt": "2026-04-21T16:50:07.248Z",
+      "completedAt": "2026-04-21T17:33:19.691Z",
+      "passageOrder": [
+        "A",
+        "F",
+        "H",
+        "G",
+        "E",
+        "C",
+        "B",
+        "D"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "I noticed unnecessary break lines after the words PUT and DELETE that make the writing confusing and sometimes I felt like there was not coherence.",
+          "timeOnPage": 395
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "I think I found this writing similar to technical papers I have read before so it felt human-written.",
+          "timeOnPage": 255
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "It felt natural and with humor, like the author was telling us about their real experiences.",
+          "timeOnPage": 237
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 1,
+          "clarity": 1,
+          "engagement": 1,
+          "authority": 1,
+          "quality": 1,
+          "reasoning": "It was too technical, with a lot of calculations without much context. It felt like I was reading pieces from different texts, no coherence, no cohesion. It was like a machine was stating facts and trying to simulate a human. Also there is a part where the last sentence of a paragraph was \"Sizing\" and then the next paragraph started talking about sizing, so I think it was supposed to be a subtitle confirming my theory that it was AI generated.",
+          "timeOnPage": 350
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "There were sentences incomplete, some I thin were supposed to be section titles. There were words starting in lowercase at the beginning of a sentence.",
+          "timeOnPage": 311
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The were sentences that felt out of place, like they were supposed to be section titles. Sometimes a paragraph ended and the next paragraph was only a sentence but it was still related so it belonged to that previous paragraph. At the end of the writing it started to feel more AI generated in comparison with the beginning ",
+          "timeOnPage": 310
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It felt like scientific papers I have read before, like the author is a professional person with experience and skills.",
+          "timeOnPage": 250
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "There were a lot of incomplete sentences that made me feel like I was missing information, like maybe this writing was a template made by AI so the users can complete it with their actual data.",
+          "timeOnPage": 282
+        }
+      },
+      "debrief": {
+        "features": "I look for incoherent sentences, syntax errors or that the text feels mechanical.",
+        "comments": "",
+        "bestAi": "C"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T17:33:19.915Z",
+        "country": "US",
+        "responseNumber": 9
+      }
+    },
+    {
+      "sessionId": "7acb958a-21ea-48bb-9e66-11d08c706efe",
+      "startedAt": "2026-04-21T17:38:09.028Z",
+      "completedAt": "2026-04-21T17:55:31.205Z",
+      "passageOrder": [
+        "B",
+        "H",
+        "C",
+        "F",
+        "A",
+        "D",
+        "E",
+        "G"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Technical Support Engineer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 185
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 94
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 56
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 68
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 96
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 91
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 203
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 127
+        }
+      },
+      "debrief": {
+        "features": "I look for the writing style and any issues in grammar or structure in the writing.",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T17:55:32.061Z",
+        "country": "US",
+        "responseNumber": 10
+      }
+    },
+    {
+      "sessionId": "f304253c-ec64-46ac-803a-c26cd4138705",
+      "startedAt": "2026-04-21T17:33:47.713Z",
+      "completedAt": "2026-04-21T17:57:44.313Z",
+      "passageOrder": [
+        "E",
+        "D",
+        "C",
+        "F",
+        "A",
+        "G",
+        "H",
+        "B"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The structure of the writing going from problem to why it happened to a solution felt more human-like than formulaic.",
+          "timeOnPage": 357
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Phrases like \"Let's call the algorithm\" imply human writing. The flow feels more human than robotic.",
+          "timeOnPage": 202
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It seems too opinionated to be AI \"the default condition we have to build for\"",
+          "timeOnPage": 113
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "There are some informal phrases that feel human like \"essential trick to have in your bag\". The way that examples are used feels human.",
+          "timeOnPage": 166
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The type of engagement that the author uses feels very human: \"we've all experienced...\"",
+          "timeOnPage": 68
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The writer uses a lot of personal language like \"our\" and specific examples",
+          "timeOnPage": 74
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "A very specific, anecdotal experience using \"I\" language. Feels too relatable and emotional to be AI written",
+          "timeOnPage": 85
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "The rhythm of the writing was the same throughout and felt very uniform. No anecdotal experiences nor personal language used.",
+          "timeOnPage": 127
+        }
+      },
+      "debrief": {
+        "features": "I look for specific examples, personal language, anecdotal experiences, and rhythm uniformity. Overall, if a passage feels too polished, uniform, and impersonal, it is most likely AI. If it has some anecdotal experience, a difference in rhythm, and some personality, it is more likely human-written.",
+        "comments": "The biggest standout between these passages in terms of whether the passage was human-written or AI generated was specific numbers and examples. Passage 8 was the only one I identified as being AI generated and it was more surface level.",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T17:57:44.536Z",
+        "country": "CA",
+        "responseNumber": 11
+      }
+    },
+    {
+      "sessionId": "acfabf37-09e2-4bbc-8ebc-319d0f8f6f72",
+      "startedAt": "2026-04-21T16:55:42.752Z",
+      "completedAt": "2026-04-21T18:20:33.863Z",
+      "passageOrder": [
+        "E",
+        "G",
+        "A",
+        "B",
+        "H",
+        "F",
+        "D",
+        "C"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 1678
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 696
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 219
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "how it was formatted.  the writing.",
+          "timeOnPage": 139
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "The life experience and humor at the start of this writing.",
+          "timeOnPage": 376
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 499
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 164
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 1,
+          "reasoning": "",
+          "timeOnPage": 928
+        }
+      },
+      "debrief": {
+        "features": "Perfection that seems unhuman.  Lack of humor in a way.  Very thorough explanation and presentation of things.",
+        "comments": "interesting survey! thanks for the opportunity.!",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T18:20:33.037Z",
+        "country": "US",
+        "responseNumber": 12
+      }
+    },
+    {
+      "sessionId": "0608e8fb-3976-465c-a4cf-59d2b310b80a",
+      "startedAt": "2026-04-21T17:09:03.583Z",
+      "completedAt": "2026-04-21T18:21:57.098Z",
+      "passageOrder": [
+        "A",
+        "H",
+        "C",
+        "E",
+        "D",
+        "F",
+        "G",
+        "B"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 397
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The style and writing feels fairly personable",
+          "timeOnPage": 921
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 53
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 1,
+          "reasoning": "This one was much harder to follow than the others. ",
+          "timeOnPage": 1308
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Writing style felt a little personable, the writer referred to themselves in first person a bit, which I don't find often in AI generated text",
+          "timeOnPage": 1036
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 139
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 1,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 105
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 49
+        }
+      },
+      "debrief": {
+        "features": "The writing style, if it felt like it was being written to someone or if it felt more generalized and abstract.",
+        "comments": "",
+        "bestAi": "B"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T18:21:57.703Z",
+        "country": "US",
+        "responseNumber": 13
+      }
+    },
+    {
+      "sessionId": "73c971bf-35d2-4de3-8074-559a0a64cbfc",
+      "startedAt": "2026-04-21T18:50:58.817Z",
+      "completedAt": "2026-04-21T19:15:48.622Z",
+      "passageOrder": [
+        "D",
+        "F",
+        "G",
+        "C",
+        "H",
+        "A",
+        "B",
+        "E"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Other",
+        "readFrequency": "Rarely",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 206
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 72
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 63
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 147
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 63
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 137
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 42
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 245
+        }
+      },
+      "debrief": {
+        "features": "a specific \"AI voice\" and writing quirks",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T19:15:48.821Z",
+        "country": "US",
+        "responseNumber": 14
+      }
+    },
+    {
+      "sessionId": "5db99bf8-9f9d-43f4-8d02-9373ac3ea71c",
+      "startedAt": "2026-04-21T18:50:46.398Z",
+      "completedAt": "2026-04-21T19:26:53.999Z",
+      "passageOrder": [
+        "E",
+        "F",
+        "H",
+        "C",
+        "D",
+        "G",
+        "B",
+        "A"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 5
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "it has a first person narrative and specific real world examples",
+          "timeOnPage": 214
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "it avoids abstract phrasing and gives step by step graphs and feels like a human educator",
+          "timeOnPage": 276
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "it has a first person narrative  ",
+          "timeOnPage": 329
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 1,
+          "authority": 1,
+          "quality": 1,
+          "reasoning": "it lacks first person narrative. ",
+          "timeOnPage": 251
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "it has conversational phrases and a practical example",
+          "timeOnPage": 207
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "it has references to real paper",
+          "timeOnPage": 167
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 1,
+          "quality": 1,
+          "reasoning": "it uses abstract generic statements",
+          "timeOnPage": 208
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "more polished but lacks depth",
+          "timeOnPage": 192
+        }
+      },
+      "debrief": {
+        "features": "abstract and generic writing, no first person narrative or personal experiences and repetitive sentences",
+        "comments": "the contrast between human and AI passages are stark. the human ones contain concrete numbers and personal experience. the AI ones aare bland and flat",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T19:26:55.918Z",
+        "country": "US",
+        "responseNumber": 15
+      }
+    },
+    {
+      "sessionId": "7c6f9b5f-9f23-4d34-be32-aa8b0a32fa7f",
+      "startedAt": "2026-04-21T19:26:55.282Z",
+      "completedAt": "2026-04-21T20:12:37.404Z",
+      "passageOrder": [
+        "D",
+        "H",
+        "A",
+        "C",
+        "G",
+        "E",
+        "B",
+        "F"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The author used first person perspective",
+          "timeOnPage": 319
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The author wrote in first person perspective",
+          "timeOnPage": 983
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Does not seem too generic and feels like someone is trying to teach me.",
+          "timeOnPage": 6
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "It keeps stating the obvious and does not add any personal experience.",
+          "timeOnPage": 2
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 1
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 1
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 2
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "Feels like I am being taught",
+          "timeOnPage": 81
+        }
+      },
+      "debrief": {
+        "features": "A natural flow or rhythm of sentences/topics and the use of personal experiences",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T20:12:38.040Z",
+        "country": "US",
+        "responseNumber": 16
+      }
+    },
+    {
+      "sessionId": "20bfdf5f-eabe-43db-960d-b7893f9faed0",
+      "startedAt": "2026-04-21T20:18:01.916Z",
+      "completedAt": "2026-04-21T20:37:18.902Z",
+      "passageOrder": [
+        "A",
+        "G",
+        "B",
+        "D",
+        "F",
+        "H",
+        "E",
+        "C"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Technical Support Engineer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 64
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 49
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 13
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 144
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 93
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 46
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 102
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 151
+        }
+      },
+      "debrief": {
+        "features": "Generic key words and precision. AI has more precision than humans.",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T20:37:19.961Z",
+        "country": "US",
+        "responseNumber": 17
+      }
+    },
+    {
+      "sessionId": "94cc3eb0-8f3e-4a57-a2b8-9400341432dd",
+      "startedAt": "2026-04-21T20:20:16.022Z",
+      "completedAt": "2026-04-21T21:15:53.319Z",
+      "passageOrder": [
+        "E",
+        "B",
+        "H",
+        "G",
+        "F",
+        "A",
+        "C",
+        "D"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "This was somewhat hard to tell, but I feel more inclined to believe it was human and just well written, due to reference to \"We\" and not a lot of hyphens like AI would include.",
+          "timeOnPage": 507
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "The passage feels very simply written that I would expect it to be written by an individual with intermediate technical experience, but not prone to writing. However, I would not be surprised if it was AI being prompted to be written in a clear and simple manner. ",
+          "timeOnPage": 466
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "To me this feels like AI mostly because I am overly suspicious when \"\u2014 \" is used because I rarely see real people use this in practice. Also the sentence \"But wait \u2014 this code has a race condition.\" reminds me of the AI surprised tone that you see in a lot of responses.",
+          "timeOnPage": 348
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The redundancy of the writing and the simple grammar and formatting make me believe it was written by a human.",
+          "timeOnPage": 283
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "This feels like something a human would write who has a good amount of technical experience instead of an AI trying to replicate a human. However, I am not very confident as I could see this being prompted to write in this style.",
+          "timeOnPage": 504
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "To me the formatting and prose make me feel like this is human as everything is explained in a simple, but technical manner as a person who is technical would write.",
+          "timeOnPage": 183
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The way the sentenced are formatted and how grammar is used makes me feel like it is a human writing with technical experience, I do not see many of the traditional AI spots.",
+          "timeOnPage": 242
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "the brevity of some paragraphs and the way the passages are written (the explanations of technical aspects) sound like something you would hear from an AI response in some cases, but I can not be fully confident.",
+          "timeOnPage": 453
+        }
+      },
+      "debrief": {
+        "features": "Hyphens, grammar, paragraph structure and lack of emotion.",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T21:16:03.961Z",
+        "country": "US",
+        "responseNumber": 18
+      }
+    },
+    {
+      "sessionId": "64b53cec-e4b2-45c3-acaa-019e5009e105",
+      "startedAt": "2026-04-21T21:18:59.111Z",
+      "completedAt": "2026-04-21T21:44:55.884Z",
+      "passageOrder": [
+        "B",
+        "F",
+        "E",
+        "A",
+        "H",
+        "G",
+        "D",
+        "C"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "key phrases like \"over the wire\" and the use of \"we\" made it seem like a real person",
+          "timeOnPage": 283
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "not really sure but uses of \"we\" and \"let's\" and some vernacular made it seem more human",
+          "timeOnPage": 155
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "some words not capitalized and sentences are very short. Some sentences dont have periods at the end and are more like phrases than complete thoughts. AI generally has great punctuation and full sentences",
+          "timeOnPage": 172
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "formatting errors that AI typically does not make",
+          "timeOnPage": 145
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "much more engaging, lots of first person language and clear personal experiences mentioned",
+          "timeOnPage": 160
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 4,
+          "quality": 2,
+          "reasoning": "not great writing quality and not engaging but some people just write bland, plus there were quite a few real world experiences that were pretty convincing",
+          "timeOnPage": 95
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "lots of real experience and uses of first person language. Writing feels simple and the reference to the code availabl open source seems human generated",
+          "timeOnPage": 188
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "seems same as previous passage which i believe was AI, very bland technical writing with no real personal touches",
+          "timeOnPage": 146
+        }
+      },
+      "debrief": {
+        "features": "icons are usually a dead give away - like lightbulbs, green checks, red x's, stars, rocketships, etc. But there were no icons in these passages\n\nOther than that i look for formal language with clear explanations but no personal \"flare\" like slang words or common colloquial phrases",
+        "comments": "seemed like one of the passages was a duplicate",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T21:44:56.238Z",
+        "country": "US",
+        "responseNumber": 19
+      }
+    },
+    {
+      "sessionId": "69dc0fe7-41ee-46fa-a79b-c480190bde3a",
+      "startedAt": "2026-04-21T21:33:15.771Z",
+      "completedAt": "2026-04-21T21:48:45.529Z",
+      "passageOrder": [
+        "F",
+        "A",
+        "H",
+        "D",
+        "E",
+        "B",
+        "C",
+        "G"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 78
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 71
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 61
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 1,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 125
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 1,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 145
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 101
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 159
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 123
+        }
+      },
+      "debrief": {
+        "features": "I usually check the wording, and how the sentence are structured. ",
+        "comments": "",
+        "bestAi": "G"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T21:48:46.751Z",
+        "country": "US",
+        "responseNumber": 20
+      }
+    },
+    {
+      "sessionId": "5acb0a2c-2b19-4796-b705-91c11b508027",
+      "startedAt": "2026-04-21T21:27:25.299Z",
+      "completedAt": "2026-04-21T22:11:14.314Z",
+      "passageOrder": [
+        "F",
+        "B",
+        "A",
+        "G",
+        "D",
+        "C",
+        "H",
+        "E"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "It's quite hard to tell with this type of text! So it's more of an 'educated guess'. ",
+          "timeOnPage": 395
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "This text is slightly more anecdotal. ",
+          "timeOnPage": 364
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "Many real-life examples given! The writer sounds like a highly experienced pro. ",
+          "timeOnPage": 402
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The writing style is quite formal and mechanical. ",
+          "timeOnPage": 217
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "Hard to say - but betting it's human written. ",
+          "timeOnPage": 338
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "Am missing clear human markers in the text. ",
+          "timeOnPage": 183
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "Personal viewpoints, anecdotes and code examples. ",
+          "timeOnPage": 179
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "The text doesn't have that human touch. ",
+          "timeOnPage": 198
+        }
+      },
+      "debrief": {
+        "features": "Anecdotes, personal experiences & viewpoints, humor. ",
+        "comments": "It's great when there's a healthy balance of personal observations, technical details and code examples. Variety is the spice of life, after all! ",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T22:11:15.526Z",
+        "country": "GB",
+        "responseNumber": 21
+      }
+    },
+    {
+      "sessionId": "2156770a-ac32-4538-b7e7-cf4d164821fb",
+      "startedAt": "2026-04-21T21:50:52.020Z",
+      "completedAt": "2026-04-21T22:23:23.997Z",
+      "passageOrder": [
+        "H",
+        "D",
+        "C",
+        "B",
+        "F",
+        "E",
+        "A",
+        "G"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 140
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 196
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 323
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 258
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 299
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 199
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 154
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 229
+        }
+      },
+      "debrief": {
+        "features": "I looked at how uniform the passage looked vs how natural flowing it was. Passages that were blunt and direct made me think they were more AI, while passages that were personal and less direct made me think they were real.",
+        "comments": "",
+        "bestAi": "D"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T22:23:24.114Z",
+        "country": "US",
+        "responseNumber": 22
+      }
+    },
+    {
+      "sessionId": "be8b4016-3ac8-42fb-b42e-db2bca13451d",
+      "startedAt": "2026-04-21T22:06:48.630Z",
+      "completedAt": "2026-04-21T22:25:28.605Z",
+      "passageOrder": [
+        "C",
+        "D",
+        "A",
+        "E",
+        "F",
+        "G",
+        "B",
+        "H"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "The overuse of commas is a typical sign of AI generated writing.",
+          "timeOnPage": 112
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The flow of writing felt much more natural than AI could generate.",
+          "timeOnPage": 167
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 1,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "Overuse of commas in the first paragraph, along with formatting errors typical of AI generated content.",
+          "timeOnPage": 125
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The use of \"our\" and other pronouns not typical of AI writing, along with clearer and more concise writing with less repeats, leads me to believe this is a human-written article/piece.",
+          "timeOnPage": 167
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "The formatting leads me to believe this was written by a human, and not AI.",
+          "timeOnPage": 95
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "The paragraphs have multiple formatting errors and abruptly cut-off sentences, indicative of AI writing.",
+          "timeOnPage": 97
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The writing flowed naturally, and made use of multiple grammatical rules that are typically not present in AI writing.",
+          "timeOnPage": 117
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "The writing style is incredibly natural, and the use of subjective pronouns is not typically present in AI generated text.",
+          "timeOnPage": 140
+        }
+      },
+      "debrief": {
+        "features": "Overuse of hyphens, em dashes, or commas. Formatting issues. Repeated points or sentences subsequently.",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T22:25:28.596Z",
+        "country": "US",
+        "responseNumber": 23
+      }
+    },
+    {
+      "sessionId": "763afef3-a301-41a1-9571-ed30dcf37181",
+      "startedAt": "2026-04-21T21:57:50.652Z",
+      "completedAt": "2026-04-21T22:28:12.403Z",
+      "passageOrder": [
+        "H",
+        "E",
+        "G",
+        "D",
+        "A",
+        "B",
+        "F",
+        "C"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 5
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 80
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 1,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 36
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 24
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 45
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 1,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 37
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 40
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 36
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 28
+        }
+      },
+      "debrief": {
+        "features": "I look for consistent tone, structured explanations and lack of natural personal variation",
+        "comments": "It was great ",
+        "bestAi": "G"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T22:28:12.293Z",
+        "country": "US",
+        "responseNumber": 24
+      }
+    },
+    {
+      "sessionId": "08fd9860-4761-47e9-9199-981d4b7e3738",
+      "startedAt": "2026-04-21T21:23:50.156Z",
+      "completedAt": "2026-04-21T22:59:39.517Z",
+      "passageOrder": [
+        "D",
+        "A",
+        "F",
+        "H",
+        "G",
+        "B",
+        "C",
+        "E"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 575
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 971
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 641
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 760
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 1,
+          "reasoning": "",
+          "timeOnPage": 827
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 5,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 285
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 1,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 263
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 448
+        }
+      },
+      "debrief": {
+        "features": "Some of the features that I look for when identifying AI-generated text would include the text suspiciously containing pure monotone text that reads as spitting out pure factual information without considering the audience's engagement to the content. I also look for simple context mistakes that a human wouldn't normally make, such as randomly switching point of views throughout a passage, sentences that feel disconnected or irrelevant to the previous sentences,  lack of citation or overconfidently claiming credit for personal citations/credit, hallucinations, etc. It is also important for me to check for a passage that reads too strictly formal, with generic patterns an AI model usually makes, such as lacking human flavor/relatability ingrained in the text.",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T22:59:39.708Z",
+        "country": "US",
+        "responseNumber": 25
+      }
+    },
+    {
+      "sessionId": "4d3936f3-3ece-4241-ac55-d8b95c85daf5",
+      "startedAt": "2026-04-21T22:05:53.490Z",
+      "completedAt": "2026-04-21T23:23:51.059Z",
+      "passageOrder": [
+        "E",
+        "H",
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "C"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 1
+      },
+      "passages": {
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "There was a typo in the text. I would not expect AI generated text to have typos.",
+          "timeOnPage": 932
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "The article finishes but I'm missing a conclusion. I feel the AI run out of tokens.",
+          "timeOnPage": 602
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It feels like the title was split into 2 lines. I believe a human wouldn't do this mistake.\nAccording to HTTP semantics, the PUT\nand DELETE",
+          "timeOnPage": 919
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 1,
+          "quality": 4,
+          "reasoning": "It feels like reading a book. ",
+          "timeOnPage": 1090
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 1,
+          "quality": 3,
+          "reasoning": "feels like reading a book",
+          "timeOnPage": 234
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 1,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 292
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 288
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 1,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "It is the 4th time to read about the same problem. ",
+          "timeOnPage": 94
+        }
+      },
+      "debrief": {
+        "features": "",
+        "comments": "",
+        "bestAi": "E"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T23:23:51.190Z",
+        "country": "GB",
+        "responseNumber": 26
+      }
+    },
+    {
+      "sessionId": "f42b4e3a-ad7c-42de-bff3-88dbd174c47f",
+      "startedAt": "2026-04-21T23:16:30.379Z",
+      "completedAt": "2026-04-21T23:56:47.778Z",
+      "passageOrder": [
+        "H",
+        "A",
+        "B",
+        "G",
+        "E",
+        "F",
+        "D",
+        "C"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "DevOps / SRE / Infrastructure",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 2
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The first sentence appears to contain a grammatical error: \"I shipped a bug once that created 47,000 duplicate the company charges in three hours.\"",
+          "timeOnPage": 262
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "Has strange formatting issues that I think a human would not create, e.g. bolding in: According to HTTP semantics, the PUT\nand DELETE",
+          "timeOnPage": 297
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 277
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 4,
+          "quality": 1,
+          "reasoning": "The sentence \"Indeed, it's not\" is non-sensical in the context, and jarring to read. I don't think AI would write that obscurely unless explcitly instructed to.",
+          "timeOnPage": 254
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 1,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "This sentence, for example, appears to be an AI artifact: \"the original post describes three flavors, and the differences between them matter in practice.\"",
+          "timeOnPage": 357
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 1,
+          "clarity": 1,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 1,
+          "reasoning": "\"Below, the graph has the derivative on each edge labeled.\": but there is no graph.",
+          "timeOnPage": 631
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 113
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 72
+        }
+      },
+      "debrief": {
+        "features": "Artefacts that appear odd. But AI models can be prompted to mimic human quirks in their output, so I am not at all confident in my answers.",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-21T23:56:48.006Z",
+        "country": "US",
+        "responseNumber": 27
+      }
+    },
+    {
+      "sessionId": "7ef2225f-8c4b-4896-af23-a10db3d72165",
+      "startedAt": "2026-04-21T23:54:29.913Z",
+      "completedAt": "2026-04-22T00:18:53.378Z",
+      "passageOrder": [
+        "D",
+        "H",
+        "B",
+        "C",
+        "A",
+        "E",
+        "F",
+        "G"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 185
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": " (only $1,400 in duplicate charges, thankfully), This line feels personal and human adjacent. ",
+          "timeOnPage": 85
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "It's very much a definition of the technical aspects rather than a deep dive into them explicitly. ",
+          "timeOnPage": 96
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "Again, the technical aspects were just defined as opposed to 'evaluated'.",
+          "timeOnPage": 251
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 1,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "The structure was very unclear at most points. Like, there was almost a mix-up between text and objects. ",
+          "timeOnPage": 261
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "It was very continuous and not very self-referential in a way that would make problem-solving clear.",
+          "timeOnPage": 134
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "This looks like a LaTeX-formatted document written by someone with analytical knowledge.",
+          "timeOnPage": 88
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Not much of an idea on this one; however, the formatting seems inconsistent with what a human would produce.",
+          "timeOnPage": 233
+        }
+      },
+      "debrief": {
+        "features": "Formatting, equation use, and use of 'personal remarks.' ",
+        "comments": "",
+        "bestAi": "G"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T00:18:52.222Z",
+        "country": "AU",
+        "responseNumber": 28
+      }
+    },
+    {
+      "sessionId": "b17a1fa5-5fa7-4bac-b471-933bd6c90a34",
+      "startedAt": "2026-04-22T00:50:04.479Z",
+      "completedAt": "2026-04-22T01:01:33.302Z",
+      "passageOrder": [
+        "D",
+        "C",
+        "F",
+        "H",
+        "B",
+        "A",
+        "E",
+        "G"
+      ],
+      "demographics": {
+        "experience": "4\u20137 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 5
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "The fact that it as less formal but still has a professional tone which most AIs cant do and noemally are black and white.",
+          "timeOnPage": 96
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "When an ai is writing and wants to specify something, it doesnt use caps lock majority of the time.",
+          "timeOnPage": 110
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Too formal and exclamation points are where an AI would have written it.",
+          "timeOnPage": 86
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Very personal and engaging to read. ",
+          "timeOnPage": 41
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 74
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 60
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 53
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 5,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 20
+        }
+      },
+      "debrief": {
+        "features": "Dashes, exclamation marks, and any any other common ways ai writes text. or when a equation or formula is written, it typically wont bunch it up with the text but rather write seperately.",
+        "comments": "",
+        "bestAi": "E"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T01:01:33.521Z",
+        "country": "CA",
+        "responseNumber": 29
+      }
+    },
+    {
+      "sessionId": "40927abf-7dd0-4a47-b70f-9a667bc4c4cd",
+      "startedAt": "2026-04-22T01:15:40.221Z",
+      "completedAt": "2026-04-22T01:38:02.780Z",
+      "passageOrder": [
+        "A",
+        "F",
+        "H",
+        "G",
+        "C",
+        "D",
+        "B",
+        "E"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 231
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 124
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 159
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 178
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 125
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 178
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 107
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 1,
+          "quality": 1,
+          "reasoning": "",
+          "timeOnPage": 113
+        }
+      },
+      "debrief": {
+        "features": "Seeing if sophisticated complicated words are used. Seeing if the article is too generic and \"wordy\". If it sounds hastily written and rushed",
+        "comments": "",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T01:38:02.740Z",
+        "country": "CA",
+        "responseNumber": 30
+      }
+    },
+    {
+      "sessionId": "0ca33d5d-1ae5-4007-8148-b0ac9a4228a3",
+      "startedAt": "2026-04-22T04:21:23.121Z",
+      "completedAt": "2026-04-22T05:00:25.744Z",
+      "passageOrder": [
+        "H",
+        "F",
+        "E",
+        "B",
+        "G",
+        "A",
+        "D",
+        "C"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "DevOps / SRE / Infrastructure",
+        "readFrequency": "Daily",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "There was a typo or error at the beginning, and explicitly talked about a humans's job experience in the first person. It did contain a couple AI stereotypes: em dashes, \"here's the kicker\"",
+          "timeOnPage": 426
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "The writing style does not seem like any technical AI writing I've read. It needs a bit of editing, for instance removing unanswered rhetorical questions.",
+          "timeOnPage": 241
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "There are some minor errors like missing period. Some sentence seem unusual enough to be human-written.",
+          "timeOnPage": 236
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "Writing in first person plural (we) is a bit unusual for AI, and the writing was not as precise as expected from AI, though there were some moments it felt artificial.",
+          "timeOnPage": 15
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 2,
+          "reasoning": "There were many errors and instances of poor writing.",
+          "timeOnPage": 2
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "There were some AI-like parts such as the bullet lists and using \"quoted text\" as a modifier but overall it felt a bit sloppy like a human wrote it.",
+          "timeOnPage": 3
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "There were some things I never see in AI writing such as using a question as a heading and using sentence fragments like \"It's to add jitter.\"",
+          "timeOnPage": 2
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "The writing is clear but some parts are a bit awkward or unpolished, such as the second sentence. Also AI doesn't usually make 1-sentence paragraphs.",
+          "timeOnPage": 128
+        }
+      },
+      "debrief": {
+        "features": "A lack of errors, an unnatural consistency, stereotypical AI constructs, just a general stiffness. Of course it is possible to get it sound more human (I do it all the time with technical writing).",
+        "comments": "I didn't keep track of which had the highest quality writing so you probably shouldn't trust my answer above. I would need to see them again.",
+        "bestAi": "E"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T05:00:25.886Z",
+        "country": "US",
+        "responseNumber": 31
+      }
+    },
+    {
+      "sessionId": "2e170a12-fd1b-4887-aa8f-0a0ac4be365c",
+      "startedAt": "2026-04-22T07:58:36.973Z",
+      "completedAt": "2026-04-22T08:37:49.432Z",
+      "passageOrder": [
+        "G",
+        "H",
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "D"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "G": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 1,
+          "engagement": 1,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "Used terms like \"we\". The writing style seemed fairly casual even though it was highly technical.",
+          "timeOnPage": 331
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The writing style felt natural, in the first person. I felt more like a conversation than a technical narrative. ",
+          "timeOnPage": 269
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "The writing style was rather stiff and informal - slightly bland - hard to tell if written by AI or human.",
+          "timeOnPage": 257
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 5,
+          "quality": 2,
+          "reasoning": "Think if this were written by AI there would be more use of bullet points in certain parts of the documents.",
+          "timeOnPage": 276
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 2,
+          "engagement": 1,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "Think if this were written by AI there would be use of bullet points in key areas of the document.",
+          "timeOnPage": 172
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 2,
+          "reasoning": "To me it reads too \"flowery\" but unnaturally so as if AI has been prompted to write in that style.",
+          "timeOnPage": 207
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "The writing is well-structured and broken up into logical steps. ",
+          "timeOnPage": 232
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "Use of first person, but not overally so. Writing style was quite casual in parts. There seemed to be some variation in pace, paragraph and sentance length, writing style.  ",
+          "timeOnPage": 294
+        }
+      },
+      "debrief": {
+        "features": "How the text is structured e.g. use of bullet points, paragraph and sentence lengths that don't vary too much (or within gramatical norms) - even pace of narrative. Consitant style. ",
+        "comments": "",
+        "bestAi": "B"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T08:37:50.043Z",
+        "country": "GB",
+        "responseNumber": 32
+      }
+    },
+    {
+      "sessionId": "05aa2862-e4cd-40ab-bb26-d4505f283c73",
+      "startedAt": "2026-04-22T08:21:15.709Z",
+      "completedAt": "2026-04-22T08:52:23.241Z",
+      "passageOrder": [
+        "H",
+        "A",
+        "F",
+        "G",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 600
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 144
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 140
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 208
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 358
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 86
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 93
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 2,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 84
+        }
+      },
+      "debrief": {
+        "features": "Em-dash usage. Formulaic structure. Sentence structure. Rhetorical question overuse.",
+        "comments": "",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T08:52:23.349Z",
+        "country": "GB",
+        "responseNumber": 33
+      }
+    },
+    {
+      "sessionId": "13c3b445-a88b-45c6-9dbd-80d144d8a068",
+      "startedAt": "2026-04-22T09:28:18.856Z",
+      "completedAt": "2026-04-22T09:44:39.461Z",
+      "passageOrder": [
+        "B",
+        "F",
+        "A",
+        "G",
+        "D",
+        "C",
+        "H",
+        "E"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Rarely",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 107
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 64
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 233
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 229
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 44
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 41
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 86
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 1,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 27
+        }
+      },
+      "debrief": {
+        "features": "Text patterns, use of punctuation, wider vocabulary, longer paragraphs.",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T09:44:39.889Z",
+        "country": "GB",
+        "responseNumber": 34
+      }
+    },
+    {
+      "sessionId": "66c2af14-17c3-4a15-a969-b0b0c8801bcf",
+      "startedAt": "2026-04-22T09:37:10.300Z",
+      "completedAt": "2026-04-22T10:11:34.225Z",
+      "passageOrder": [
+        "D",
+        "E",
+        "C",
+        "F",
+        "H",
+        "B",
+        "G",
+        "A"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Support Manager / Director",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "D": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "I think it sounds to continuous and technical. ",
+          "timeOnPage": 488
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 84
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 59
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 197
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 595
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 169
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 229
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "",
+          "timeOnPage": 39
+        }
+      },
+      "debrief": {
+        "features": "AI paragraphs often have a very consistent sentence length and structure. It feels \"smooth\" to a fault.",
+        "comments": "",
+        "bestAi": "A"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T10:11:32.174Z",
+        "country": "GB",
+        "responseNumber": 35
+      }
+    },
+    {
+      "sessionId": "d4d9a2dd-30c0-4988-b14c-d7ce190b197c",
+      "startedAt": "2026-04-22T09:59:33.846Z",
+      "completedAt": "2026-04-22T10:29:55.782Z",
+      "passageOrder": [
+        "D",
+        "F",
+        "H",
+        "C",
+        "E",
+        "B",
+        "G",
+        "A"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Solutions / Systems Architect",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 307
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 302
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 238
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 223
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 137
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 141
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 169
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 120
+        }
+      },
+      "debrief": {
+        "features": "certain formatting and grammar.  Condensed info heavy paragraphs.",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T10:29:55.849Z",
+        "country": "GB",
+        "responseNumber": 36
+      }
+    },
+    {
+      "sessionId": "2098a0a2-97a9-4342-9d12-8f4b7320bf89",
+      "startedAt": "2026-04-22T12:46:04.857Z",
+      "completedAt": "2026-04-22T12:59:55.736Z",
+      "passageOrder": [
+        "F",
+        "G",
+        "B",
+        "D",
+        "C",
+        "H",
+        "A",
+        "E"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "DevOps / SRE / Infrastructure",
+        "readFrequency": "Daily",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 89
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 41
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 77
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 126
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 55
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 55
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 1,
+          "reasoning": "",
+          "timeOnPage": 69
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 57
+        }
+      },
+      "debrief": {
+        "features": "Use of pronouns, bad grammar and poor styling paragraph-wise, after taking into consideration of english as a second langue issues",
+        "comments": "Doning the comparison above would need me to do a quick review of each ",
+        "bestAi": "G"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T12:59:55.953Z",
+        "country": "US",
+        "responseNumber": 37
+      }
+    },
+    {
+      "sessionId": "7d8d60a2-fd81-4c8e-8449-a0d3cd8ce565",
+      "startedAt": "2026-04-22T14:50:42.979Z",
+      "completedAt": "2026-04-22T14:58:56.419Z",
+      "passageOrder": [
+        "H",
+        "A",
+        "F",
+        "C",
+        "E",
+        "B",
+        "G",
+        "D"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "H": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 117
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 72
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "",
+          "timeOnPage": 28
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 36
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "",
+          "timeOnPage": 37
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 32
+        },
+        "G": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 37
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "",
+          "timeOnPage": 34
+        }
+      },
+      "debrief": {
+        "features": "mistakes and language used",
+        "comments": "",
+        "bestAi": "E"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T14:58:58.278Z",
+        "country": "US",
+        "responseNumber": 38
+      }
+    },
+    {
+      "sessionId": "32a43d7d-b7e7-4f11-9afc-123e4eacd8f0",
+      "startedAt": "2026-04-22T15:20:16.207Z",
+      "completedAt": "2026-04-22T15:51:26.268Z",
+      "passageOrder": [
+        "B",
+        "H",
+        "D",
+        "C",
+        "A",
+        "G",
+        "E",
+        "F"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Support Manager / Director",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "B": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 5,
+          "clarity": 2,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "Its written as if someone is speaking, not creating a point based document to outline pros and cons in short form. Most people will need point, not detail",
+          "timeOnPage": 333
+        },
+        "H": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "the explantion of How idempotency keys work was simpler and to the point. Also, AI seems to like using the word \"kicker\"",
+          "timeOnPage": 207
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It was clear until the \"Jitter\" explanations, that started to get confusing and wasnt clear.",
+          "timeOnPage": 210
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "Seems the same as the first, but written by a non hands on technical person, who understads how to convey the message in simpler terms.",
+          "timeOnPage": 237
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 5,
+          "reasoning": "Up until \"According to HTTP semantics, the PUT\" it read like a human writing it, simple and easy. but after this, the formatting and the layout fell apart, something a Human wouldn't do.",
+          "timeOnPage": 228
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 1,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 2,
+          "reasoning": "Not to the point, confusing and one item joined abother without a break and proper descrition in simpler terms",
+          "timeOnPage": 202
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 5,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "Just felt like it was AI, especially including the equations/calculations",
+          "timeOnPage": 211
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Just felt smooth and clear, and the equations are laid out clearly and in the correct format and loaction with regards to descritions.",
+          "timeOnPage": 136
+        }
+      },
+      "debrief": {
+        "features": "Formatting, key words that wouldnt usually be used in everyday life.",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T15:51:26.656Z",
+        "country": "CA",
+        "responseNumber": 39
+      }
+    },
+    {
+      "sessionId": "f29b48a7-505e-4f3d-a8bf-18a6e3a3d7ca",
+      "startedAt": "2026-04-22T15:41:15.539Z",
+      "completedAt": "2026-04-22T16:15:08.459Z",
+      "passageOrder": [
+        "A",
+        "B",
+        "D",
+        "C",
+        "E",
+        "G",
+        "F",
+        "H"
+      ],
+      "demographics": {
+        "experience": "8\u201315 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "Daily",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "There's a human error \"Even the the payment API\". Text starts with a relatable, non-technical hook. Includes practical edge cases.",
+          "timeOnPage": 213
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Author doesn't explain theory, they immediately jump into the real-world issues about race condition. Great callout to Postgres ON CONFLICT DO NOTHING, which is interesting clause which is not usually visible on AI. Also PostgreSQL usually called, they used Postgres informally.",
+          "timeOnPage": 209
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Several distinct features indicate humanity here. Author references \"small simulator\" and \"available as an open-source project\". Which is not something that AI would invent as a personal project that it can refer to. Progression of the argument is highly human-like. Phrases like \"the no-jitter exponential backoff\" showcase openinonated technical writing.",
+          "timeOnPage": 164
+        },
+        "C": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "This reads like an AI model written blog with paraphrase style. There's a heavy use of synonym-swapping, and unnatural phrases. \"Furnishes the previous outcome\" or \"ensuring the subsequent retry begins afresh\". The tone is strange and uses overly verbose academic speak.",
+          "timeOnPage": 167
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 2,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 2,
+          "reasoning": "Many red flags looking like rewritten human text from previous texts",
+          "timeOnPage": 147
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Has many jargon words, human stylistic choices (such as 'usually 4 bits wide'). Seamless transition from theory to practical implementation.",
+          "timeOnPage": 450
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "It's greatly written professional post. There's a mistake such as \"it's derivative\" instead of its. References \"Theano\" which is an older version of deep learning framework. Uses academic citations and examples of math formulas. ",
+          "timeOnPage": 272
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "High-quality blog post of a developer. It has many examples, pedagogical tone. It includes multiple real-world code progressions, such as step-by-step \"adding a cache -> realizing the cache -> utilizing atomic database\". ",
+          "timeOnPage": 194
+        }
+      },
+      "debrief": {
+        "features": "I look for unnatural phrasing with issues or unusual wordings. Checking then sumarrizing of technical text with loss of context. Sometimes clear when there's a leak of prompting or previous iterations of the text polishing. ",
+        "comments": "Study is great for understanding weak points in writing by LLM's and possibility to improve it with time, but also highlights how human's creativity dominates over dry writing of AI.",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T16:15:08.733Z",
+        "country": "GB",
+        "responseNumber": 40
+      }
+    },
+    {
+      "sessionId": "608478cf-8e85-423a-826f-ba94a86d1a34",
+      "startedAt": "2026-04-22T16:01:16.567Z",
+      "completedAt": "2026-04-22T16:55:36.393Z",
+      "passageOrder": [
+        "H",
+        "A",
+        "B",
+        "E",
+        "F",
+        "C",
+        "G",
+        "D"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a month",
+        "aiConfidence": 2
+      },
+      "passages": {
+        "H": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 5,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "I thought it was human-written because of the personal perspective and telling from experience, as well as it seeming like similar human-written content I've read before.",
+          "timeOnPage": 356
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 2,
+          "quality": 4,
+          "reasoning": "I thought it was AI-generated because it's straight to the point rather than being supplemented with real-life experience and the formatting feels less human.",
+          "timeOnPage": 355
+        },
+        "B": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 4,
+          "reasoning": "I think it's human written because of the simpler content and formatting that seems less AI-like.",
+          "timeOnPage": 348
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "I think it seems human-written because of the inconsistent formatting; I feel like AI doesn't usually make mistakes in this area.",
+          "timeOnPage": 411
+        },
+        "F": {
+          "origin": "ai",
+          "confidence": 3,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 5,
+          "reasoning": "I think this was AI-generated because of the high quality formatting, the use of language, and the written perspective.",
+          "timeOnPage": 331
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 2,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 3,
+          "reasoning": "I think this was human-written because of the word choice and inconsistent formatting.",
+          "timeOnPage": 403
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 3,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "I think this was human-written because it seems to be written from real experience and the formatting is imperfect.",
+          "timeOnPage": 349
+        },
+        "D": {
+          "origin": "ai",
+          "confidence": 2,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "I think this was AI-generated because of the use of language and more refined paragraph format.",
+          "timeOnPage": 403
+        }
+      },
+      "debrief": {
+        "features": "I analyze the perspective of writing, writing style, correctness of formatting, and grammar and punctuation use.",
+        "comments": "I'd have to see the passages again to honestly answer the above.",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T16:55:37.966Z",
+        "country": "US",
+        "responseNumber": 41
+      }
+    },
+    {
+      "sessionId": "7b2b1245-db04-45c7-b549-bcbb5f71d2f0",
+      "startedAt": "2026-04-22T14:56:49.558Z",
+      "completedAt": "2026-04-22T16:57:24.301Z",
+      "passageOrder": [
+        "D",
+        "F",
+        "G",
+        "C",
+        "B",
+        "A",
+        "H",
+        "E"
+      ],
+      "demographics": {
+        "experience": "1\u20133 years",
+        "role": "Other",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 4
+      },
+      "passages": {
+        "D": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "The writing uses a formal tone and generic statements",
+          "timeOnPage": 1147
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The writing is self-explanatory, has a natural flow, with specific details/examples. Hence, it's written by a  human.",
+          "timeOnPage": 581
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 3,
+          "reasoning": "The passage was written by a human as it uses the first person narrative with specific examples and a natural flow.",
+          "timeOnPage": 344
+        },
+        "C": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The passage is very enggaging, has a natural flow with specific details. Hence, it's written by a  human.",
+          "timeOnPage": 12
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 3,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It contains a few complex phrases \"deceptively simple to describe\" that a regular human wouldn't have used when writing the passage.",
+          "timeOnPage": 466
+        },
+        "A": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The passage appears to  be human-written, as it has a natural flow, written in simple English with casual tone.",
+          "timeOnPage": 1387
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The passage contains a real-life experience, written with a casual tone, using everyday English. Hence, it is written by a human.",
+          "timeOnPage": 1109
+        },
+        "E": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 3,
+          "quality": 3,
+          "reasoning": "It uses a formal tone and generic statements. Hence, it's AI-generated.",
+          "timeOnPage": 236
+        }
+      },
+      "debrief": {
+        "features": "Use of formal tone\nDo the sentenes flow naturally?\nUse of Generic statements\nUse of complex words\nUse of technical words without explanations\n",
+        "comments": "",
+        "bestAi": "H"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T16:57:26.284Z",
+        "country": "CA",
+        "responseNumber": 42
+      }
+    },
+    {
+      "sessionId": "e6df2def-a675-4258-8e3b-2906af3015b7",
+      "startedAt": "2026-04-22T22:15:00.138Z",
+      "completedAt": "2026-04-22T22:34:21.886Z",
+      "passageOrder": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "B",
+        "D",
+        "A"
+      ],
+      "demographics": {
+        "experience": "16+ years",
+        "role": "Software Engineer / Developer",
+        "readFrequency": "A few times a week",
+        "aiConfidence": 3
+      },
+      "passages": {
+        "C": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 5,
+          "engagement": 2,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "The word we used often ",
+          "timeOnPage": 272
+        },
+        "E": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 3,
+          "engagement": 2,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It read like a story or experience ",
+          "timeOnPage": 213
+        },
+        "F": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 3,
+          "authority": 5,
+          "quality": 4,
+          "reasoning": "It just looks like it\u2019s from a textbook ",
+          "timeOnPage": 102
+        },
+        "G": {
+          "origin": "human",
+          "confidence": 4,
+          "naturalness": 4,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Uses of word we read like a story ",
+          "timeOnPage": 112
+        },
+        "H": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 5,
+          "authority": 5,
+          "quality": 5,
+          "reasoning": "Really reads like a story being told by a human ",
+          "timeOnPage": 60
+        },
+        "B": {
+          "origin": "ai",
+          "confidence": 4,
+          "naturalness": 2,
+          "clarity": 3,
+          "engagement": 3,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It seemed dry but also like textbook as well ",
+          "timeOnPage": 115
+        },
+        "D": {
+          "origin": "human",
+          "confidence": 5,
+          "naturalness": 5,
+          "clarity": 5,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "Use of the word I and other phrases as though it was being explained by a human ",
+          "timeOnPage": 72
+        },
+        "A": {
+          "origin": "ai",
+          "confidence": 5,
+          "naturalness": 2,
+          "clarity": 4,
+          "engagement": 4,
+          "authority": 4,
+          "quality": 4,
+          "reasoning": "It seemed dry , more instructional like ",
+          "timeOnPage": 73
+        }
+      },
+      "debrief": {
+        "features": "Not the words I or we , none story telling ",
+        "comments": "",
+        "bestAi": "F"
+      },
+      "_meta": {
+        "submittedAt": "2026-04-22T22:34:22.153Z",
+        "country": "US",
+        "responseNumber": 43
+      }
+    }
+  ],
+  "anonymization_note": "Prolific identifiers (PID, studyId, sessionId) and browser fingerprints (IP, User-Agent, internal KV key) have been stripped. The random per-session UUID in each record's `sessionId` field is retained as the only per-response identifier. This field cannot be traced back to Prolific participant identity."
+}

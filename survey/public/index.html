@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Technical Writing Quality Evaluation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      crossorigin="anonymous">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+  min-height: 100vh;
+}
+
+.progress-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f5f5f7;
+  padding: 1.25rem 0 0.75rem;
+}
+
+.progress-track {
+  height: 5px;
+  background: #e5e5ea;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0066cc;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  color: #86868b;
+  margin-top: 0.35rem;
+  text-align: right;
+}
+
+.page {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-top: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+h2 { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.4rem; }
+
+.lead { font-size: 1.1rem; color: #424245; margin-bottom: 1.25rem; line-height: 1.7; }
+.section-desc { color: #6e6e73; margin-bottom: 1.5rem; }
+.instruction { color: #6e6e73; font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+p + p { margin-top: 0.75rem; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.75rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btn-primary { background: #0066cc; color: #fff; }
+.btn-primary:hover { background: #0055b3; }
+.btn-primary:disabled { background: #99c8f0; cursor: not-allowed; }
+
+.btn-secondary { background: #f5f5f7; color: #1d1d1f; border: 1px solid #d2d2d7; }
+.btn-secondary:hover { background: #ececf0; }
+
+.btn-submit { background: #34c759; color: #fff; font-weight: 600; padding: 0.8rem 2.5rem; font-size: 1rem; }
+.btn-submit:hover { background: #2db84e; }
+.btn-submit:disabled { background: #a8e6be; cursor: not-allowed; }
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f2;
+}
+
+.question-group { margin-bottom: 1.75rem; }
+
+.question-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: #1d1d1f;
+}
+
+.required::after { content: ' *'; color: #ff3b30; font-weight: 400; }
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.9rem;
+  margin: 0.35rem 0;
+  border: 1px solid #e5e5ea;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 0.95rem;
+}
+
+.radio-group label:hover { background: #f0f5ff; border-color: #99c8f0; }
+.radio-group input[type="radio"] { accent-color: #0066cc; flex-shrink: 0; }
+.radio-group input[type="radio"]:checked ~ span { color: #0066cc; font-weight: 500; }
+
+.likert { margin: 0.5rem 0 0.25rem; }
+
+.likert-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.likert-option { cursor: pointer; text-align: center; }
+.likert-option input { display: none; }
+
+.likert-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #d2d2d7;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #86868b;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.likert-option:hover .likert-circle { border-color: #99c8f0; color: #0066cc; }
+.likert-option input:checked + .likert-circle {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.likert-anchors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: #86868b;
+  padding: 0 0.25rem;
+}
+
+.passage-card {
+  background: #fff;
+  border: 1px solid #e0e0e3;
+  border-radius: 14px;
+  padding: 2.5rem 2.75rem;
+  margin: 1rem 0 2rem;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif', serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #2c2c2e;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.passage-card p { margin-bottom: 1.15rem; }
+.passage-card p:last-child { margin-bottom: 0; }
+
+.passage-card h2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+}
+
+.passage-card h2 + p { margin-top: 0.5rem; }
+
+.passage-card h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2.25rem 0 0.6rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f0f0f2;
+  color: #1d1d1f;
+}
+
+.passage-card h2 + h3,
+.passage-card h3:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.passage-card ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.15rem;
+}
+
+.passage-card li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.passage-card pre {
+  background: #f7f7f8;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 1.25rem 0;
+  border: 1px solid #e8e8eb;
+}
+
+.passage-card code:not(pre code) {
+  background: #f0f0f2;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.87em;
+  font-family: 'SF Mono', 'Fira Code', Menlo, monospace;
+}
+
+.passage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.passage-counter {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5856d6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.15s;
+}
+
+textarea:focus { outline: none; border-color: #0066cc; box-shadow: 0 0 0 3px rgba(0,102,204,0.15); }
+textarea::placeholder { color: #aeaeb2; }
+
+.validation-error {
+  color: #ff3b30;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+  display: none;
+  padding: 0.5rem 0.75rem;
+  background: #fff2f2;
+  border-radius: 8px;
+  border: 1px solid #ffd6d6;
+}
+
+.example-box {
+  margin: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid;
+}
+
+.example-human { background: #f0faf0; border-color: #34c759; }
+.example-ai { background: #fff8f0; border-color: #ff9500; }
+
+.example-label { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.6rem; }
+
+blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #424245;
+  line-height: 1.7;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 1rem 0 2rem;
+}
+
+.results-table th {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  background: #f5f5f7;
+  border-bottom: 2px solid #e5e5ea;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.results-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #f0f0f2;
+  vertical-align: top;
+}
+
+.results-table .correct td { background: #f0faf0; }
+.results-table .incorrect td { background: #fff8f6; }
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.badge-human { background: #d1fae5; color: #065f46; }
+.badge-ai { background: #fde68a; color: #92400e; }
+
+.score-banner {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  background: #f0f5ff;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+.table-container { overflow-x: auto; }
+
+.page-thanks { text-align: center; padding: 3rem 2rem; }
+.page-thanks h1 { font-size: 2rem; margin-bottom: 1rem; }
+.page-thanks .lead { max-width: 500px; margin: 0 auto 1rem; }
+
+@media (max-width: 600px) {
+  .page { padding: 1.5rem; border-radius: 12px; }
+  .passage-card { padding: 1.25rem 1rem; }
+  .likert-circle { width: 40px; height: 40px; font-size: 0.9rem; }
+  .likert-row { gap: 0.4rem; }
+  h1 { font-size: 1.4rem; }
+  .results-table { font-size: 0.82rem; }
+  .results-table th, .results-table td { padding: 0.4rem; }
+}
+</style>
+</head>
+<body>
+<!--PROLIFIC_CONFIG-->
+<div id="app"></div>
+
+<script type="application/json" id="pdata">{"A": {"text": "Networks are unreliable. We’ve all experienced trouble connecting to Wi-Fi, or had a phone call drop on us abruptly.\n\nThe networks connecting our servers are, on average, more reliable than consumer-level last miles like cellular or home ISPs, but given enough information moving across the wire, they’re still going to fail in exotic ways. Outages, routing problems, and other intermittent failures may be statistically unusual on the whole, but still bound to be happening all the time at some ambient background rate.\n\nTo overcome this sort of inherently unreliable environment, it’s important to design APIs and clients that will be robust in the event of failure, and will predictably bring a complex integration to a consistent state despite them. Let’s take a look at a few ways to do that.\n\nPlanning for failure\n\nConsider a call between any two nodes. There are a variety of failures that can occur:\n\n- The initial connection could fail as the client tries to connect to a server.\n\n- The call could fail midway while the server is fulfilling the operation, leaving the work in limbo.\n\n- The call could succeed, but the connection break before the server can tell its client about it.\n\nAny one of these leaves the client that made the request in an uncertain situation. In some cases, the failure is definitive enough that the client knows with good certainty that it’s safe to simply retry it. For example, a total failure to even establish a connection to the server. In many others though, the success of the operation is ambiguous from the perspective of the client, and it doesn’t know whether retrying the operation is safe. A connection terminating midway through message exchange is an example of this case.\n\nThis problem is a classic staple of distributed systems, and the definition is broad when talking about a “distributed system” in this sense: as few as two computers connecting via a network that are passing each other messages. Even the the payment API and just one other server that’s making requests to it comprise a distributed system.\n\nMaking liberal use of idempotency\n\nThe easiest way to address inconsistencies in distributed state caused by failures is to implement server endpoints so that they’re idempotent, which means that they can be called any number of times while guaranteeing that side effects only occur once.\n\nWhen a client sees any kind of error, it can ensure the convergence of its own state with the server’s by retrying, and can continue to retry until it verifiably succeeds. This fully addresses the problem of an ambiguous failure because the client knows that it can safely handle any failure using one simple technique.\n\nAs an example, consider the API call for a hypothetical DNS provider that enables us to add subdomains via an HTTP request:\n\nAll the information needed to create a record is included in the call, and it’s perfectly safe for a client to invoke it any number of times. If the server receives a call that it realizes is a duplicate because the domain already exists, it simply ignores the request and responds with a successful status code.\n\nAccording to HTTP semantics, the PUT\n\nand DELETE\n\nverbs are idempotent, and the PUT\n\nverb in particular signifies that a target resource should be created or replaced entirely with the contents of a request’s payload (in modern RESTful parlance, a modification would be represented by a PATCH\n\n).\n\nGuaranteeing “exactly once” semantics\n\nWhile the inherently idempotent HTTP semantics around PUT\n\nand DELETE\n\nare a good fit for many API calls, what if we have an operation that needs to be invoked exactly once and no more? An example might be if we were designing an API endpoint to charge a customer money; accidentally calling it twice would lead to the customer being double-charged, which is very bad.\n\nThis is where idempotency keys come into play. When performing a request, a client generates a unique ID to identify just that operation and sends it up to the server along with the normal payload. The server receives the ID and correlates it with the state of the request on its end. If the client notices a failure, it retries the request with the same ID, and from there it’s up to the server to figure out what to do with it.\n\nIf we consider our sample network failure cases from above:\n\n- On retrying a connection failure, on the second request the server will see the ID for the first time, and process it normally.\n\n- On a failure midway through an operation, the server picks up the work and carries it through. The exact behavior is heavily dependent on implementation, but if the previous operation was successfully rolled back by way of an ACID database, it’ll be safe to retry it wholesale. Otherwise, state is recovered and the call is continued.\n\n- On a response failure (i.e. the operation executed successfully, but the client couldn’t get the result), the server simply replies with a cached result of the successful operation.", "wordCount": 844}, "B": {"text": "Networks aren't reliable. Any system we build that sends a request across the wire has to deal with the fact that our request may fail to arrive, may arrive but produce an ambiguous response, or may arrive and be processed correctly but leave the client uncertain about whether that actually happened. For APIs that mutate state, this isn't an edge case we can design around. It's the default condition we have to build for.\n\nThe defense we reach for is idempotency: the property that lets a networked operation be retried safely. A request for a given operation will produce the same outcome no matter how many times it arrives, and our clients can recover from network failures without worrying about whether the previous attempt succeeded.\n\nThe practical form of this defense is the idempotency key, a unique identifier generated by the client and sent with each request. On first receipt the server runs the operation and stores the result under the key. On any subsequent receipt of the same key, the server returns the stored result without re-running the operation. That's the whole mechanism, in its simplest form. Everything else is the engineering detail we need to think about when we make it work under concurrency.\n\nThe retry safety problem\n\nSo what can actually go wrong when a client sends us a request? There are three distinct failure modes, and they behave very differently from the client's perspective. The request may fail to reach the server at all, due to a DNS lookup failure or a broken connection. The request may reach the server and begin processing, only for the server to crash or the processing to fail before completion. Or the request may complete successfully on the server, but the response fails to return to the client. In that last case, the client can't distinguish a successful operation from a failed one, because the success indicator never arrived.\n\nFor any mutating operation, the third failure mode is the dangerous one for us. Clients that retry on timeout will re-send requests that already completed on our server, and the second request will execute the operation a second time. Charges will double, orders will duplicate, and our inventory will decrement twice, often silently, with the discrepancy only visible after reconciliation. The naive fix (checking for existing state before inserting) creates a race condition: two concurrent requests can both pass the check and proceed independently.\n\nThe idempotency key solves this by giving the client a unique identifier for each logical operation. If the client retries, it resends the same identifier. Our server then sees a second request with the same key and returns the original result, whatever that result was. The key is the handle by which we deduplicate incoming work.\n\nHow idempotency keys work\n\nThe server-side machinery is deceptively simple to describe. On each request, we check whether the key already exists in the key store. If it does, we return the stored result. If it doesn't, we execute the operation, store the result, and return it. That's the whole interface in four lines of pseudocode.\n\nThe difficulty lies in the word check. A race condition exists between the key-existence check and the key insertion. Two concurrent requests with the same key can both pass the check and both execute the operation. This is exactly the scenario the mechanism was meant to prevent. The fix is to move the key store inside the transactional boundary of the operation itself, so the insert-and-execute sequence is atomic with respect to other requests.\n\nIn practice this usually means making the key store part of the same database the operation modifies. If you're using Postgres, the ON CONFLICT DO NOTHING clause gives you both a uniqueness check and a lock acquisition in a single atomic operation. If the INSERT succeeds, the current request holds the key and can proceed. If the INSERT fails on the uniqueness constraint, the current request is a retry, so it can look up the stored result and return it.\n\nStoring keys atomically with business state\n\nStoring the idempotency key in the same table as the business state it governs simplifies our recovery story. A payment system might store the key alongside the payment row itself, with columns for the request amount, the resulting charge identifier, the status, and the timestamps. The key then becomes the primary key of the table. A retry looks up an existing row by key, while a new request inserts a new row atomically.\n\nThe transaction that wraps the operation extends from the INSERT of the key through the external call to the payment processor, through the UPDATE that records the final charge identifier, and through the commit. If the external call fails, the transaction aborts and the row is rolled back, so the next retry starts fresh. If the external call succeeds but the UPDATE fails, the row remains in a pending state, and the next retry can reconcile against the processor's own records.", "wordCount": 829}, "C": {"text": "Networks aren't reliable. When building any system that sends requests over the network, we need to account for the possibility that our request might not reach its destination, could reach but result in an unclear reply, or might even be processed successfully yet still leave the client unsure if it was completed properly. We cannot design around edge cases for APIs that mutate state. It's the default condition we have to build for.\n\nThe defense we reach for is idempotency: the property that lets a networked operation be retried safely. Upon arrival of repeated requests for an operation, we ensure consistent results each time; moreover, our clients can resiliently recover from network failures, as they need not concern themselves with prior attempt's success status.\n\nOur client-side solution for repeated requests involves using an idempotency key, which we generate uniquely for each instance and include in every transmission. On initial receipt, our server executes the operation, saving its outcome beneath the specified key. When the server receives the same key again, it returns the previously stored result without running the operation anew. That's the whole mechanism, in its simplest form. When we make it work under concurrency, everything else is the engineering detail we need to consider.\n\nThe retry safety problem\n\nSo what can actually go wrong when a client sends us a request?\n\nThree failure modes exist, each behaving uniquely from the client's viewpoint. The request may fail to reach the server at all, due to a DNS lookup failure or a broken connection. The request may reach the server and begin processing, only for the server to crash or the processing to fail before completion. The request might succeed on the server, but the response could fail to reach the client. Lastly, if the client cannot differentiate between a successful and failed operation, it's due to the missing success indicator. For any mutating operation, the third failure mode is the dangerous one for us.\n\nClients retrying due to timeout may cause requests previously processed by our server to be resent, thereby triggering duplicate operations. Our inventory will decrease twice, orders will be duplicated, and charges will double, usually without any notification, making the difference noticeable only after reconciliation. The naive fix (checking for existing state before inserting) creates a race condition: two concurrent requests can both pass the check and proceed independently. Each logical operation receives its own unique identifier from the idempotency key.\n\nUpon retrying, the client will resend the identical identifier. The server subsequently encounters another request bearing the same key and furnishes the previous outcome regardless of its nature. We deduplicate incoming work through its handle, referred to as \"the key\". How idempotency keys work\n\nThe server-side machinery is deceptively simple to describe.\n\nWe check if the key is already in the key store with every request.\n\nIf it does, we return the stored result. If it doesn't, we execute the operation, store the result, and return it. That's the whole interface in four lines of pseudocode. The challenge is with the word check. A race condition exists between the key-existence check and the key insertion.\n\nWith the same key, two concurrent requests can each pass the check and carry out the operation. This is precisely what the mechanism was designed to avoid. To make the operation atomic regarding other requests, relocate the key store within the transactional boundary of the insert-and-execute sequence itself. In practice this usually means making the key store part of the same database the operation modifies. If you use Postgres, ON CONFLICT DO NOTHING provides both uniqueness checking and lock acquiring in one atomic action.\n\nThe current request can proceed if the INSERT is successful and it holds the key. If the INSERT encounters an error due to the uniqueness constraint, and the current request is in fact a retry, then it should retrieve the previously stored result and provide it as output. We simplify recovery by storing the idempotency key alongside its governing business state within a single table. Our payment system could potentially save the key alongside each payment row, featuring columns dedicated to the requested amount, generated charge ID, current status, and relevant timestamps.\n\nThe primary key of the table is the key.\n\nA new request atomically inserts a new row, while a retry locates an existing row by its key. The transaction that wraps the operation extends from the INSERT of the key through the external call to the payment processor, through the UPDATE that records the final charge identifier, and through the commit. If failure occurs during an external call, we abort the transaction, rollback the row, ensuring the subsequent retry begins afresh. When an external call is successful but the UPDATE doesn't work, the row stays in a pending status, and the next attempt to resolve it will check against the processor’s internal records.\n\nSame-key concurrent requests race deterministically. If a request secures the INSERT, it runs the operation. We hit the uniqueness constraint, look up the newly written row, then return it.", "wordCount": 838}, "D": {"text": "Exponential Backoff And Jitter\n\nIntroducing OCC\n\nOptimistic concurrency control (OCC) is a time-honored way for multiple writers to safely modify a single object without losing writes. OCC has three nice properties: it will always make progress as long as the underlying store is available, it’s easy to understand, and it’s easy to implement. The database's conditional writes make OCC a natural fit, and it's natively supported by common client libraries.\n\nWhile OCC is guaranteed to make progress, it can still perform quite poorly under high contention. The simplest of these contention cases is when a whole lot of clients start at the same time, and try to update the same database row. With one client guaranteed to succeed every round, the time to complete all the updates grows linearly with contention.\n\nFor the graphs in this post, I used a small simulator to model the behavior of OCC on a network with delay (and variance in delay), against a remote database. In this simulation, the network introduces delay with a mean of 10ms and variance of 4ms. The first simulation shows how completion time grows linearly with contention. This linear growth is because one client succeeds every round, so it takes N rounds for all N clients to succeed.\n\nUnfortunately, that’s not the whole picture. With N clients contending, the total amount of work done by the system increases with N2.\n\nAdding Backoff\n\nThe problem here is that N clients compete in the first round, N-1 in the second round, and so on. Having every client compete in every round is wasteful. Slowing clients down may help, and the classic way to slow clients down is capped exponential backoff. Capped exponential backoff means that clients multiply their backoff by a constant after each attempt, up to some maximum value. In our case, after each unsuccessful attempt, clients sleep for:\n\nRunning the simulation again shows that backoff helps a small amount, but doesn’t solve the problem. Client work has only been reduced slightly.\n\nThe best way to see the problem is to look at the times these exponentially backed-off calls happen.\n\nIt’s obvious that the exponential backoff is working, in that the calls are happening less and less frequently. The problem also stands out: there are still clusters of calls. Instead of reducing the number of clients competing in every round, we’ve just introduced times when no client is competing. Contention hasn’t been reduced much, although the natural variance in network delay has introduced some spreading.\n\nAdding Jitter\n\nThe solution isn’t to remove backoff. It’s to add jitter. Initially, jitter may appear to be a counter-intuitive idea: trying to improve the performance of a system by adding randomness. The time series above makes a great case for jitter – we want to spread out the spikes to an approximately constant rate. Adding jitter is a small change to the sleep function:\n\nThat time series looks a whole lot better. The gaps are gone, and beyond the initial spike, there’s an approximately constant rate of calls. It’s also had a great effect on the total number of calls.\n\nIn the case with 100 contending clients, we’ve reduced our call count by more than half. We’ve also significantly improved the time to completion, when compared to un-jittered exponential backoff.\n\nThere are a few ways to implement these timed backoff loops. Let’s call the algorithm above “Full Jitter”, and consider two alternatives. The first alternative is “Equal Jitter”, where we always keep some of the backoff and jitter by a smaller amount:\n\nThe intuition behind this one is that it prevents very short sleeps, always keeping some of the slow down from the backoff. A second alternative is “Decorrelated Jitter”, which is similar to “Full Jitter”, but we also increase the maximum jitter based on the last random value.\n\nWhich approach do you think is best?\n\nLooking at the amount of client work, the number of calls is approximately the same for “Full” and “Equal” jitter, and higher for “Decorrelated”. Both cut down work substantially relative to both the no-jitter approaches.\n\nThe no-jitter exponential backoff approach is the clear loser. It not only takes more work, but also takes more time than the jittered approaches. In fact, it takes so much more time we have to leave it off the graph to get a good comparison of the other methods.\n\nOf the jittered approaches, “Equal Jitter” is the loser. It does slightly more work than “Full Jitter”, and takes much longer. The decision between “Decorrelated Jitter” and “Full Jitter” is less clear. The “Full Jitter” approach uses less work, but slightly more time. Both approaches, though, present a substantial decrease in client work and server load.\n\nIt’s worth noting that none of these approaches fundamentally change the N2 nature of the work to be done, but do substantially reduce work at reasonable levels of contention. The return on implementation complexity of using jittered backoff is huge, and it should be considered a standard approach for remote clients.\n\nAll of the graphs and numbers from this post were generated using a simple simulation of OCC behavior. The simulator code is available as an open-source project.", "wordCount": 860}, "E": {"text": "Upon encountering forty seconds of downstream service errors, our fleet of 1,200 microservice instances, configured with naive retry policies, can inadvertently trigger eleven minutes of cascading failures.\n\nThe mechanism is straightforward: constant-delay retries with no jitter cause every instance to retry in lockstep, five times, at the exact same half-second interval. The recovering service gets slammed with synchronized waves of traffic, rate limits get blown, API keys get suspended, and operators end up manually restarting half the fleet. The root cause can be explained in one sentence, and it’s the same issue seen in most retry-related postmortems: constant delays without any jitter. We faced a synchronized retry issue akin to a stampede of our services\n\nAll N clients fail at roughly the same moment, so they all retry at roughly the same moment.\n\nIf the retry delay is a fixed interval of a full second, then a second later all N clients slam the service simultaneously, and if it was already struggling, the situation compounds. They all fail again, they all retry again a second later, in perfect synchronization. The work scales with N-squared because every round has nearly as many contenders as the last. In the original post on the topic, the author explained this clearly with a simulation of optimistic concurrency control involving N clients competing for the same resource.\n\nEach round sees just one client succeed, thus as N rises, completion time expands linearly while overall workload increases quadratically. The system ends up handling around ten thousand call attempts due to a hundred competing clients and continuous retries, when it should only need to complete about a hundred successful writes. In batch processing scenarios, we observe N-squared behavior when workers commence simultaneously at the same wall-clock time. A batch job kicking off at midnight UTC, with three hundred workers all hitting an internal config service backed by a single-leader Postgres setup, will fill the connection pool within the same second.\n\nWhen some requests fail, the constant one-second retry turns midnight into a two-minute outage every single night, reliably enough that teams sometimes build Slack bots to auto-dismiss the alerts rather than fix the underlying retry policy. Why exponential backoff alone isn't enough\n\nThe textbook fix is exponential backoff, where the wait time doubles after each failure: first retry at 1 second, then 2, then 4, then 8, capped at some maximum. the simulations showed that using exponential backoff decreases total client work compared to constant retry, spreading out the retries over time.\n\nBut it doesn't solve the synchronization problem, and the reason becomes clear when we plot the retry times for a hundred clients all using the same exponential backoff schedule starting from the same failure time.\n\nOur observations reveal clusters characterized by dense bursts of retries occurring at intervals of 1 second, followed by 2 seconds and 4 seconds, with notable gaps in between. Quiet periods occur, but the contention during the bursts stays just as intense.\n\nThe spikes remain spikes, but they are spread out further apart. The problem is determinism. Every client using the identical formula, with uniform base and cap, calculates an equal sleep duration, maintaining their synchronized march. Natural network fluctuations can add 4 to 8 milliseconds of delay, yet this becomes insignificant compared to the sudden surge caused by hundreds of clients connecting almost simultaneously.\n\nTo mitigate jitter, incorporate randomness within the backoff interval's calculation. Almost paradoxically, adding noise can enhance system performance, aiming to smooth out retry rates instead of relying on intermittent spikes. Randomness accomplishes this.\n\nthe original post describes three flavors, and the differences between them matter in practice.\n\nThe full jitter implementation employs the equation sleep = random_between(0, min(cap, base * 2^attempt)) to select a random duration within the backoff window. Our simulations show this results in the widest spread and least overall work. Equal jitter maintains half of the exponential backoff as a minimum and randomizes the other half, making sure the client doesn’t rest too short, though the figures indicate it works a bit worse than full jitter in terms of both workload and finish time.\n\nDecorrelated jitter uses sleep = min(cap, random_between(base, sleep_previous * 3)) and bases it on the last sleep duration instead of the attempt count. Our solution performs marginally more overall work versus complete jitter yet maintains similar completion times. At 100 contending clients, the simulation results show that both full jitter and decorrelated jitter reduce total client work by more than half compared to unjittered exponential backoff. And unjittered exponential backoff was so slow that the author had to leave it off the completion-time graph entirely to make the other approaches readable. That goes beyond mere marginal improvement. It's a difference in categories.\n\nWhat this looks like in production\n\nA retry library rewritten to use full jitter with capped exponential backoff can be remarkably small. The formula for sleep is defined as sleep = random(0, min(max_backoff, base_delay * 2^attempt)). We added approximately twelve lines of code. The difference in production behavior is dramatic.", "wordCount": 833}, "F": {"text": "Calculus on Computational Graphs: Backpropagation\n\nIntroduction\n\nBackpropagation is the key algorithm that makes training deep models computationally tractable. For modern neural networks, it can make training with gradient descent as much as ten million times faster, relative to a naive implementation. That’s the difference between a model taking a week to train and taking 200,000 years.\n\nBeyond its use in deep learning, backpropagation is a powerful computational tool in many other areas, ranging from weather forecasting to analyzing numerical stability – it just goes by different names. In fact, the algorithm has been reinvented at least dozens of times in different fields (see Griewank (2010)). The general, application independent, name is “reverse-mode differentiation.”\n\nFundamentally, it’s a technique for calculating derivatives quickly. And it’s an essential trick to have in your bag, not only in deep learning, but in a wide variety of numerical computing situations.\n\nComputational Graphs\n\nComputational graphs are a nice way to think about mathematical expressions. For example, consider the expression \\(e=(a+b)*(b+1)\\). There are three operations: two additions and one multiplication. To help us talk about this, let’s introduce two intermediary variables, \\(c\\) and \\(d\\) so that every function’s output has a variable. We now have:\n\n\\[c=a+b\\]\n\n\\[d=b+1\\]\n\n\\[e=c*d\\]\n\nTo create a computational graph, we make each of these operations, along with the input variables, into nodes. When one node’s value is the input to another node, an arrow goes from one to another.\n\nThese sorts of graphs come up all the time in computer science, especially in talking about functional programs. They are very closely related to the notions of dependency graphs and call graphs. They’re also the core abstraction behind the popular deep learning framework Theano.\n\nWe can evaluate the expression by setting the input variables to certain values and computing nodes up through the graph. For example, let’s set \\(a=2\\) and \\(b=1\\):\n\nThe expression evaluates to \\(6\\).\n\nDerivatives on Computational Graphs\n\nIf one wants to understand derivatives in a computational graph, the key is to understand derivatives on the edges. If \\(a\\) directly affects \\(c\\), then we want to know how it affects \\(c\\). If \\(a\\) changes a little bit, how does \\(c\\) change? We call this the partial derivative of \\(c\\) with respect to \\(a\\).\n\nTo evaluate the partial derivatives in this graph, we need the sum rule and the product rule:\n\n\\[\\frac{\\partial}{\\partial a}(a+b) = \\frac{\\partial a}{\\partial a} + \\frac{\\partial b}{\\partial a} = 1\\]\n\n\\[\\frac{\\partial}{\\partial u}uv = u\\frac{\\partial v}{\\partial u} + v\\frac{\\partial u}{\\partial u} = v\\]\n\nBelow, the graph has the derivative on each edge labeled.\n\nWhat if we want to understand how nodes that aren’t directly connected affect each other? Let’s consider how \\(e\\) is affected by \\(a\\). If we change \\(a\\) at a speed of 1, \\(c\\) also changes at a speed of \\(1\\). In turn, \\(c\\) changing at a speed of \\(1\\) causes \\(e\\) to change at a speed of \\(2\\). So \\(e\\) changes at a rate of \\(1*2\\) with respect to \\(a\\).\n\nThe general rule is to sum over all possible paths from one node to the other, multiplying the derivatives on each edge of the path together. For example, to get the derivative of \\(e\\) with respect to \\(b\\) we get:\n\n\\[\\frac{\\partial e}{\\partial b}= 1*2 + 1*3\\]\n\nThis accounts for how b affects e through c and also how it affects it through d.\n\nThis general “sum over paths” rule is just a different way of thinking about the multivariate chain rule.\n\nFactoring Paths\n\nThe problem with just “summing over the paths” is that it’s very easy to get a combinatorial explosion in the number of possible paths.\n\nIn the above diagram, there are three paths from \\(X\\) to \\(Y\\), and a further three paths from \\(Y\\) to \\(Z\\). If we want to get the derivative \\(\\frac{\\partial Z}{\\partial X}\\) by summing over all paths, we need to sum over \\(3*3 = 9\\) paths:\n\n\\[\\frac{\\partial Z}{\\partial X} = \\alpha\\delta + \\alpha\\epsilon + \\alpha\\zeta + \\beta\\delta + \\beta\\epsilon + \\beta\\zeta + \\gamma\\delta + \\gamma\\epsilon + \\gamma\\zeta\\]\n\nThe above only has nine paths, but it would be easy to have the number of paths to grow exponentially as the graph becomes more complicated.\n\nInstead of just naively summing over the paths, it would be much better to factor them:\n\n\\[\\frac{\\partial Z}{\\partial X} = (\\alpha + \\beta + \\gamma)(\\delta + \\epsilon + \\zeta)\\]\n\nThis is where “forward-mode differentiation” and “reverse-mode differentiation” come in. They’re algorithms for efficiently computing the sum by factoring the paths. Instead of summing over all of the paths explicitly, they compute the same sum more efficiently by merging paths back together at every node. In fact, both algorithms touch each edge exactly once!\n\nForward-mode differentiation starts at an input to the graph and moves towards the end. At every node, it sums all the paths feeding in. Each of those paths represents one way in which the input affects that node. By adding them up, we get the total way in which the node is affected by the input, it’s derivative.", "wordCount": 832}, "G": {"text": "In our work with bloom filters, we swap memory usage for precision, using bit arrays and select hash functions to minimize storage while accepting some false positives.\n\nOur deduplication service was responsible for ensuring we didn't count the same ad impression twice. A HashSet holding 400 million 128-bit UUIDs consumed roughly 12 GB of RAM per instance across four boxes. Switching from that HashSet to a Bloom filter optimized for a 1% false positive rate reduced memory consumption to approximately 480 MB per instance. Indeed, it's not. Twelve gigs down to 200 megs after sharding across the four boxes. The mechanics are straightforward.\n\nWe begin with m bits set to zero. We pick k independent hash functions, each mapping an input to one of those m positions. To insert an element, we run it through all k functions and set the corresponding k bits to 1; checking membership involves ensuring that all k bits are already set. If a bit reads 0, it's certainly absent from the set. If all bits are 1, the element is likely there, but may not be. To achieve approximately a 1% false positive rate with our Bloom filter, around 9.6 bits per element are required, irrespective of the actual size of those elements.\n\nThe savings over a structure storing full keys plus object overhead plus pointer chasing through linked nodes can therefore be dramatic. Sizing\n\nGetting the sizing wrong is how a filter ends up saying \"yes\" to everything, so it's worth knowing the two formulas well enough to plug in real numbers.\n\nGiven n expected elements and a desired false positive probability p, the optimal bit array size is m = -(n * ln(p)) / (ln(2))^2, and the optimal number of hash functions is k = (m / n) * ln(2).\n\nWe aimed to store 400 million elements in our dedup service with a 0.1% false positive rate. This gives m of approximately 5.75 billion bits, or about 719 MB.\n\nWe reduced it to about 480 MB per instance by relaxing to 1%. Our implementation involved using around 7 hash functions, achieved by dividing a single 128-bit MurmurHash3 output into smaller parts, adhering to the Kirsch-Mitzenmacher technique described in their 2006 paper that demonstrates how two hash functions can mimic k independent ones. The formula for the false positive rate assumes that the hash functions are uniformly and independently distributed. In practice, MurmurHash3 or xxHash64 work well, and our experience shows that we've never had a production Bloom filter fail due to insufficiently independent hash functions.\n\nPlenty have failed when someone set m incorrectly. There isn’t a specific point at which an insertion fails in a Bloom filter, and it doesn’t have a fixed capacity limit. As elements accumulate, the fraction of bits set to 1 increases gradually, causing the false positive rate to degrade steadily, initially, but less so later on.\n\nWhen the element count goes above the design target, the filter begins reporting membership for almost every query.\n\nWe're essentially wasting resources by constantly checking the same condition that never changes. We watched this happen in a content recommendation service that used per-user Bloom filters to track which posts someone had already seen, so the system wouldn't surface them again. We designed our filters to handle 10,000 items per user each. It appeared generous until a brand account that follows 50,000 other users surpassed that limit.\n\nEvery candidate post was marked as seen by the filter, leaving the user's feed empty. A support ticket arrived stating \"my feed is broken,\" and it took roughly two hours to track down the issue to a saturated Bloom filter. The remediation was to monitor the estimated fill ratio via the standard formula (fraction of set bits) and trigger a rebuild when it crosses a threshold, something we should have instrumented from the start. Standard Bloom filters don’t allow deletions. Clearing the k bits for a removed element risks clearing bits that belong to other elements. Introducing this could lead to false negatives, breaking our system's sole guarantee.\n\nCounting Bloom filters solve this issue by using a small counter. Usually 4 bits wide. In place of each bit, which increments during insertion and decrements during deletion.\n\nThis works but quadruples memory usage at minimum and introduces the possibility of counter overflow. This can itself cause false negatives if the counters aren't wide enough. We switched from a counting Bloom filter to a cuckoo filter in our distributed cache invalidation system after six months of successful use.", "wordCount": 751}, "H": {"text": "I shipped a bug once that created 47,000 duplicate the company charges in three hours. It happened on a Saturday morning in 2018, and I woke up to my phone buzzing itself off my nightstand — our head of support calling me because customers were flooding the support channels with screenshots of their credit card statements. We'd deployed a new payment flow the night before, and I'd forgotten to make our retry logic idempotent.\n\nThat morning taught me everything I needed to know about why idempotency matters in distributed systems. Not in theory, but in the very real sense of having to write apology emails to customers and issue refunds while our CFO calculated exactly how much we'd lost in processing fees.\n\nThe retry safety problem\n\nHere's the thing about networks: they fail in boring, predictable ways. A request times out. A connection drops. A load balancer hiccups. Your code needs to handle this, so you add retries. But retries create their own problem — what if your request actually succeeded but you just didn't get the response?\n\nI learned this the hard way at that fintech startup. We had a simple payment endpoint that looked bulletproof:\n\n``python\ndef charge_customer(amount, customer_id):\n    charge = stripe.Charge.create(\n        amount=amount,\n        customer=customer_id,\n        currency='usd'\n    )\n    save_payment_record(charge.id, amount, customer_id)\n    return charge.id\n`\n\nWhen the company's API was slow that Saturday morning, our client code would timeout after 10 seconds and retry. But here's the kicker — the company had often already processed the charge. They just took 11 seconds to tell us about it. So we'd retry, create another charge, and another, and another.\n\nThe worst part? This wasn't even a distributed systems problem in the academic sense. It was just two computers talking over the internet, and we still got it catastrophically wrong.\n\nHow idempotency keys work\n\nThe fix is conceptually simple: give each request a unique ID, and make sure that ID always produces the same result. If I retry with the same ID, I should get the same outcome — whether that's a successful charge, a failed charge, or an error.\n\nHere's what that looks like in practice:\n\n`python\ndef charge_customer(amount, customer_id, idempotency_key):\n    # Check if we've seen this key before\n    existing = get_cached_result(idempotency_key)\n    if existing:\n        return existing\n    \n    # New request - process it\n    charge = stripe.Charge.create(\n        amount=amount,\n        customer=customer_id,\n        currency='usd',\n        idempotency_key=idempotency_key\n    )\n    \n    # Store the result\n    cache_result(idempotency_key, charge.id)\n    save_payment_record(charge.id, amount, customer_id)\n    \n    return charge.id\n`\n\nBut wait — this code has a race condition. What if two requests with the same idempotency key arrive simultaneously? What if we crash after calling the company but before caching the result? We've just moved the problem around.\n\nStoring keys atomically with business state\n\nThe real insight is that idempotency keys need to be part of your transactional boundary. You can't treat them as a separate caching layer — they need to be stored atomically with your business state.\n\nAt a classifieds startup in 2015, we learned this after a much smaller incident (only $1,400 in duplicate charges, thankfully). Our fix was to make the idempotency key part of our payments table:\n\n`sql\nCREATE TABLE payments (\n    idempotency_key VARCHAR(255) PRIMARY KEY,\n    charge_id VARCHAR(255),\n    amount INTEGER,\n    customer_id VARCHAR(255),\n    status VARCHAR(50),\n    created_at TIMESTAMP,\n    completed_at TIMESTAMP\n);\n`\n\nNow our charge logic could be truly atomic:\n\n`python\ndef charge_customer(amount, customer_id, idempotency_key):\n    with db.transaction():\n        # Try to insert a new payment record\n        payment = db.execute(\"\"\"\n            INSERT INTO payments \n            (idempotency_key, amount, customer_id, status, created_at)\n            VALUES (%s, %s, %s, 'pending', NOW())\n            ON CONFLICT (idempotency_key) DO NOTHING\n            RETURNING *\n        \"\"\", [idempotency_key, amount, customer_id])\n        \n        if not payment:\n            # Key already exists - return the existing record\n            return db.execute(\"\"\"\n                SELECT * FROM payments \n                WHERE idempotency_key = %s\n            \"\"\", [idempotency_key])\n        \n        # We got the lock - make the charge\n        charge = stripe.Charge.create(\n            amount=amount,\n            customer=customer_id,\n            currency='usd',\n            idempotency_key=idempotency_key\n        )\n        \n        # Update our record with the result\n        db.execute(\"\"\"\n            UPDATE payments \n            SET charge_id = %s, status = 'completed', completed_at = NOW()\n            WHERE idempotency_key = %s\n        \"\"\", [charge.id, idempotency_key])\n        \n        return payment\n`\n\nThe key insight: we use the database's uniqueness constraint to ensure only one request can \"win\" for each idempotency key. If two requests race, one will insert successfully and proceed, while the other will get a conflict and return the existing record.\n\nVersion tokens and distributed state\n\nSometimes you need something more sophisticated than simple idempotency keys. At my current company, we built a distributed task processing system where jobs could be modified while they were running. We needed to ensure that updates were applied in order, even when they arrived out of order.\n\nThis is where version tokens come in. Think of them as idempotency keys with a sequence number:\n\n`python\ndef update_job(job_id, updates, version_token):\n    with db.transaction():\n        current_job = db.execute(\"\"\"\n            SELECT * FROM jobs WHERE id = %s FOR UPDATE\n        \"\"\", [job_id])\n        \n        if current_job.version >= version_token:\n            # This update is outdated\n            return current_job\n        \n        # Apply the update\n        db.execute(\"\"\"\n            UPDATE jobs \n            SET data = %s, version = %s \n            WHERE id = %s\n        \"\"\", [updates, version_token, job_id])\n``", "wordCount": 824}}</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        crossorigin="anonymous"></script>
+
+<script>
+(function() {
+  'use strict';
+
+  // ===== PASSAGE DATA =====
+  var PASSAGES = JSON.parse(document.getElementById('pdata').textContent);
+
+  // ===== ANSWER KEY =====
+  var ANSWERS = {
+    A: { source: 'Human', detail: 'Brandur Leach, Stripe Engineering Blog (2017)', topic: 'Idempotency Keys' },
+    B: { source: 'AI',    detail: 'Humanized via surgical pipeline + function-word calibration', topic: 'Idempotency Keys' },
+    C: { source: 'AI',    detail: 'Humanized + cross-model sentence mixing (3 models)', topic: 'Idempotency Keys' },
+    D: { source: 'Human', detail: 'Marc Brooker, AWS Architecture Blog (2015)', topic: 'Exponential Backoff & Jitter' },
+    E: { source: 'AI',    detail: 'Humanized + cross-model sentence mixing (3 models)', topic: 'Exponential Backoff & Jitter' },
+    F: { source: 'Human', detail: 'Chris Olah, colah.github.io (2015)', topic: 'Backpropagation' },
+    G: { source: 'AI',    detail: 'Humanized + cross-model sentence mixing (3 models)', topic: 'Bloom Filters' },
+    H: { source: 'AI',    detail: 'Raw AI generation (no humanization)', topic: 'Idempotency Keys' }
+  };
+
+  // ===== PROLIFIC CAPTURE =====
+  // Prolific appends PROLIFIC_PID / STUDY_ID / SESSION_ID to the URL when it sends a participant.
+  // Capture once at load so a later navigation/reload doesn't lose them.
+  var _urlParams = new URLSearchParams(window.location.search);
+  var _prolific = {
+    pid: _urlParams.get('PROLIFIC_PID') || null,
+    studyId: _urlParams.get('STUDY_ID') || null,
+    sessionId: _urlParams.get('SESSION_ID') || null
+  };
+
+  // ===== STATE =====
+  var state = {
+    page: 0,
+    sessionId: crypto.randomUUID(),
+    startTime: new Date().toISOString(),
+    passageOrder: shuffle(Object.keys(PASSAGES)),
+    demographics: {},
+    passages: {},
+    debrief: {},
+    submitted: false,
+    pageStart: Date.now(),
+    prolific: _prolific
+  };
+
+  // Restore saved progress silently — auto-resume, no prompt
+  try {
+    var saved = localStorage.getItem('survey_progress');
+    if (saved) {
+      var parsed = JSON.parse(saved);
+      if (!parsed.submitted && parsed.page > 0) {
+        state = parsed;
+        state.pageStart = Date.now();
+        // Prefer fresh Prolific params from the URL over any stale saved copy
+        if (_prolific.pid) state.prolific = _prolific;
+        else if (!state.prolific) state.prolific = _prolific;
+      }
+    }
+  } catch(e) { /* ignore */ }
+
+  // ===== UTILITIES =====
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function esc(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function saveProgress() {
+    try { localStorage.setItem('survey_progress', JSON.stringify(state)); } catch(e) {}
+  }
+
+  // ===== TEXT RENDERING =====
+  function isHeading(block) {
+    if (block.split('\n').length > 1) return false;
+    if (block.length > 100) return false;
+    if (/[.;,:]$/.test(block)) return false;          // ends with sentence punctuation
+    if ((block.match(/[.]/g) || []).length > 1) return false; // multiple periods = sentence
+    if (!/^[A-Z"\u201c]/.test(block)) return false;
+    if (block.split(' ').length > 14) return false;
+    // Reject if it reads like a sentence (starts with article/pronoun + verb pattern)
+    if (/^(The |A |An |In |On |If |So |But |For |When |While |Or |Upon |Each |Our |This |With |We |It |That |There )/.test(block) && block.split(' ').length > 6) return false;
+    return true;
+  }
+
+  function renderText(text) {
+    // Extract code blocks first (1-3 backtick delimiters)
+    var codes = [];
+    text = text.replace(/`{1,3}(\w*)\n([\s\S]*?)`{1,3}/g, function(m, lang, code) {
+      var idx = codes.length;
+      codes.push('<pre><code>' + esc(code.trim()) + '</code></pre>');
+      return '\n\n%%CODE' + idx + '%%\n\n';
+    });
+
+    // Split into raw blocks
+    var rawBlocks = text.split(/\n\n+/).map(function(b) { return b.trim(); }).filter(Boolean);
+
+    // Group consecutive bullet items into single lists
+    var grouped = [];
+    var bulletBuf = [];
+    for (var i = 0; i < rawBlocks.length; i++) {
+      if (/^[-\u2022]\s/.test(rawBlocks[i])) {
+        bulletBuf.push(rawBlocks[i]);
+      } else {
+        if (bulletBuf.length) { grouped.push({ t: 'ul', items: bulletBuf }); bulletBuf = []; }
+        grouped.push({ t: 'block', text: rawBlocks[i] });
+      }
+    }
+    if (bulletBuf.length) grouped.push({ t: 'ul', items: bulletBuf });
+
+    var isFirst = true;
+    return grouped.map(function(item) {
+      if (item.t === 'ul') {
+        return '<ul>' + item.items.map(function(b) {
+          return '<li>' + b.replace(/^[-\u2022]\s/, '') + '</li>';
+        }).join('') + '</ul>';
+      }
+
+      var block = item.text;
+
+      // Code placeholder
+      var cm = block.match(/^%%CODE(\d+)%%$/);
+      if (cm) return codes[parseInt(cm[1])];
+
+      // Heading detection
+      if (isHeading(block)) {
+        var tag = isFirst ? 'h2' : 'h3';
+        isFirst = false;
+        return '<' + tag + '>' + block + '</' + tag + '>';
+      }
+      isFirst = false;
+
+      // Regular paragraph — handle inline code
+      block = block.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+      return '<p>' + block.replace(/\n/g, ' ') + '</p>';
+    }).join('\n');
+  }
+
+  // ===== LIKERT RENDERER =====
+  function likert(name, leftLbl, rightLbl, val) {
+    var h = '<div class="likert"><div class="likert-row">';
+    for (var i = 1; i <= 5; i++) {
+      h += '<label class="likert-option">'
+        + '<input type="radio" name="' + name + '" value="' + i + '"'
+        + (val === i ? ' checked' : '') + '>'
+        + '<span class="likert-circle">' + i + '</span></label>';
+    }
+    h += '</div><div class="likert-anchors"><span>' + leftLbl + '</span><span>' + rightLbl + '</span></div></div>';
+    return h;
+  }
+
+  // ===== RADIO GROUP =====
+  function radioGroup(name, options, selected) {
+    return '<div class="radio-group" data-field="' + name + '">'
+      + options.map(function(opt) {
+          return '<label><input type="radio" name="' + name + '" value="' + opt + '"'
+            + (selected === opt ? ' checked' : '') + '><span>' + opt + '</span></label>';
+        }).join('')
+      + '</div>';
+  }
+
+  // ===== PAGE RENDERERS =====
+
+  function pgWelcome() {
+    return '<div class="page">'
+      + '<h1>Technical Writing Quality Evaluation</h1>'
+      + '<p class="lead">Thank you for participating in this research study on technical writing quality.</p>'
+      + '<p>You will read <strong>8 short passages</strong> (~800 words each) about various software engineering topics and evaluate each one.</p>'
+      + '<p>The study takes approximately <strong>25\u201330 minutes</strong>.</p>'
+      + '<p>Your responses are anonymous. No personally identifiable information is collected beyond the demographic questions on the next page.</p>'
+      + '<p style="margin-top:1.25rem">By proceeding, you consent to participate in this study. You may stop at any time.</p>'
+      + '<div class="nav-buttons"><div></div>'
+      + '<button class="btn btn-primary" onclick="SV.next()">Begin Study \u2192</button>'
+      + '</div></div>';
+  }
+
+  function pgDemographics() {
+    var d = state.demographics;
+    return '<div class="page">'
+      + '<h2>About You</h2>'
+      + '<p class="section-desc">These questions help us understand the background of our evaluators.</p>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">How many years of professional experience in enterprise technology do you have?</label>'
+      + radioGroup('experience', ['1\u20133 years','4\u20137 years','8\u201315 years','16+ years'], d.experience)
+      + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Which best describes your current role?</label>'
+      + radioGroup('role', ['Technical Support Engineer','Senior / Escalation Engineer','Support Manager / Director','Software Engineer / Developer','Solutions / Systems Architect','DevOps / SRE / Infrastructure','Other'], d.role)
+      + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">How often do you read technical documentation, blog posts, or knowledge base articles?</label>'
+      + radioGroup('readFrequency', ['Daily','A few times a week','A few times a month','Rarely'], d.readFrequency)
+      + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">How confident are you in your ability to distinguish AI-generated text from human-written text?</label>'
+      + likert('aiConfidence', 'Not at all confident', 'Very confident', d.aiConfidence)
+      + '</div>'
+
+      + '<div id="vmsg" class="validation-error"></div>'
+      + '<div class="nav-buttons">'
+      + '<button class="btn btn-secondary" onclick="SV.prev()">\u2190 Back</button>'
+      + '<button class="btn btn-primary" onclick="SV.next()">Continue \u2192</button>'
+      + '</div></div>';
+  }
+
+  function pgCalibration() {
+    return '<div class="page">'
+      + '<h2>Calibration</h2>'
+      + '<p>Before you begin, here are two examples to calibrate your expectations.</p>'
+
+      + '<div class="example-box example-human">'
+      + '<div class="example-label">Example A \u2014 Written by a human engineer:</div>'
+      + '<blockquote>\u201CI\u2019ve been mass-deleting projects from my GitHub and mass-archiving emails, which feels great. '
+      + 'There\u2019s something satisfying about declaring technical bankruptcy on old ideas that will never ship. '
+      + 'My three-year-old Kubernetes operator that was going to revolutionize config management? Archived. '
+      + 'The half-finished CLI tool that already has twelve better alternatives? Deleted.\u201D</blockquote>'
+      + '</div>'
+
+      + '<div class="example-box example-ai">'
+      + '<div class="example-label">Example B \u2014 Generated by an AI language model:</div>'
+      + '<blockquote>\u201CConfiguration management represents a critical component of modern infrastructure operations. '
+      + 'Organizations must carefully evaluate their tooling choices to ensure alignment with operational requirements '
+      + 'and scalability objectives. The selection of appropriate configuration management frameworks directly impacts '
+      + 'deployment reliability and system maintainability.\u201D</blockquote>'
+      + '</div>'
+
+      + '<p>Notice the differences: the human example uses first-person narrative, specific details, casual voice, and humor. '
+      + 'The AI example uses abstract language, formal tone, and generic statements.</p>'
+      + '<p><strong>However</strong>, not all AI text is this obvious \u2014 modern AI can produce much more '
+      + 'natural-sounding prose. Use your best judgment on each passage.</p>'
+
+      + '<div class="nav-buttons">'
+      + '<button class="btn btn-secondary" onclick="SV.prev()">\u2190 Back</button>'
+      + '<button class="btn btn-primary" onclick="SV.next()">Begin Evaluation \u2192</button>'
+      + '</div></div>';
+  }
+
+  function pgPassage(passageId, num) {
+    var r = state.passages[passageId] || {};
+
+    return '<div class="page">'
+      + '<div class="passage-header"><span class="passage-counter">Passage ' + num + ' of 8</span></div>'
+      + '<p class="instruction">Read the following passage carefully, then answer the questions below.</p>'
+      + '<div class="passage-card" id="passage-text">' + renderText(PASSAGES[passageId].text) + '</div>'
+
+      + '<div class="questions">'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q1. Do you believe this passage was written by a human or generated by AI?</label>'
+      + '<div class="radio-group" data-field="origin">'
+      + '<label><input type="radio" name="origin" value="human"' + (r.origin==='human'?' checked':'') + '><span>Written by a human</span></label>'
+      + '<label><input type="radio" name="origin" value="ai"' + (r.origin==='ai'?' checked':'') + '><span>Generated by AI</span></label>'
+      + '</div></div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q2. How confident are you in your answer above?</label>'
+      + likert('confidence', 'Complete guess', 'Very confident', r.confidence) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q3. Does the writing feel natural, like a real person wrote it?</label>'
+      + likert('naturalness', 'Very artificial / mechanical', 'Completely natural', r.naturalness) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q4. Is the technical content explained clearly?</label>'
+      + likert('clarity', 'Confusing / hard to follow', 'Very clear', r.clarity) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q5. Is the writing engaging to read?</label>'
+      + likert('engagement', 'Dull / lost interest', 'Very engaging', r.engagement) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q6. Does the writer sound like they have real experience?</label>'
+      + likert('authority', 'Textbook / no real experience', 'Deep experience', r.authority) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label required">Q7. How would you rate the overall writing quality?</label>'
+      + likert('quality', 'Poor', 'Excellent', r.quality) + '</div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label">Q8. What made you think this was human-written or AI-generated? (optional)</label>'
+      + '<textarea name="reasoning" placeholder="What specific features did you notice?">' + (r.reasoning||'') + '</textarea>'
+      + '</div>'
+
+      + '</div>'
+
+      + '<div id="vmsg" class="validation-error"></div>'
+      + '<div class="nav-buttons">'
+      + '<button class="btn btn-secondary" onclick="SV.prev()">\u2190 ' + (num===1?'Back to Calibration':'Previous Passage') + '</button>'
+      + '<button class="btn btn-primary" onclick="SV.next()">' + (num===8?'Continue to Debrief':'Next Passage') + ' \u2192</button>'
+      + '</div></div>';
+  }
+
+  function pgDebrief() {
+    var db = state.debrief;
+
+    // All 8 passages listed with topic labels for memory aid — does NOT reveal which are AI
+    var qualityOptions = state.passageOrder.map(function(id, idx) {
+      var num = idx + 1;
+      var topic = ANSWERS[id].topic;
+      return '<label><input type="radio" name="bestAi" value="' + id + '"'
+        + (db.bestAi === id ? ' checked' : '')
+        + '><span>Passage ' + num + ' \u2014 ' + topic + '</span></label>';
+    }).join('');
+
+    return '<div class="page">'
+      + '<h2>Final Questions</h2>'
+      + '<p>Just a few questions before we finish. <strong>Once you submit, your answers are locked and you\u2019ll see the results.</strong></p>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label">What features do you generally look for when identifying AI-generated text?</label>'
+      + '<textarea name="features" placeholder="What clues do you look for?">' + (db.features||'') + '</textarea></div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label">Which of the 8 passages had the highest quality writing?</label>'
+      + '<div class="radio-group" data-field="bestAi">' + qualityOptions + '</div></div>'
+
+      + '<div class="question-group">'
+      + '<label class="question-label">Any other comments or observations?</label>'
+      + '<textarea name="comments" placeholder="Optional">' + (db.comments||'') + '</textarea></div>'
+
+      + '<div id="vmsg" class="validation-error"></div>'
+      + '<div class="nav-buttons">'
+      + '<button class="btn btn-submit" onclick="SV.submit()">Submit Survey &amp; See Results</button>'
+      + '</div></div>';
+  }
+
+  function pgThanks() {
+    var correctCount = 0;
+    var rows = state.passageOrder.map(function(id, idx) {
+      var ans = ANSWERS[id];
+      var guess = (state.passages[id] || {}).origin;
+      var correct = (guess === 'human' && ans.source === 'Human') ||
+                    (guess === 'ai' && ans.source === 'AI');
+      if (correct) correctCount++;
+      return '<tr class="' + (correct ? 'correct' : 'incorrect') + '">'
+        + '<td>Passage ' + (idx+1) + '</td>'
+        + '<td><span class="badge badge-' + ans.source.toLowerCase() + '">' + ans.source + '</span></td>'
+        + '<td>' + ans.detail + '</td>'
+        + '<td>' + ans.topic + '</td>'
+        + '<td>' + (correct ? '\u2713' : '\u2717') + '</td>'
+        + '</tr>';
+    }).join('');
+
+    // Prolific return block — shown only if participant came in via Prolific AND a completion URL is configured
+    var prolificBlock = '';
+    var pid = (state.prolific && state.prolific.pid) || null;
+    var completionUrl = (typeof window !== 'undefined' && window.PROLIFIC_COMPLETION_URL) || '';
+    if (pid && completionUrl) {
+      prolificBlock = '<div class="prolific-return" style="background:#fff8e1;border:2px solid #ffb300;border-radius:12px;padding:1.5rem;margin:1.5rem 0;text-align:center">'
+        + '<h3 style="margin-top:0">\u26a0\ufe0f Important: Return to Prolific</h3>'
+        + '<p>To complete the study and receive payment, you must click the button below to return to Prolific.</p>'
+        + '<a href="' + completionUrl + '" class="btn btn-primary" style="display:inline-block;padding:0.9rem 1.75rem;margin-top:0.5rem;text-decoration:none;font-size:1.05rem">Return to Prolific to Complete \u2192</a>'
+        + '</div>';
+    } else if (pid && !completionUrl) {
+      // Participant came via Prolific but URL wasn't configured — surface clearly so it can be fixed
+      prolificBlock = '<div class="prolific-return" style="background:#ffebee;border:2px solid #c62828;border-radius:12px;padding:1.25rem;margin:1.5rem 0">'
+        + '<strong>Prolific participant detected but completion URL is not configured.</strong> Please contact the researcher (PID: ' + esc(pid) + ').'
+        + '</div>';
+    }
+
+    return '<div class="page page-thanks">'
+      + '<h1>\u2705 Thank You!</h1>'
+      + '<p class="lead">Your responses have been recorded.</p>'
+      + prolificBlock
+      + '<div class="score-banner">You correctly identified <strong>' + correctCount + ' out of 8</strong> passages.</div>'
+      + '<h3>Answer Key</h3>'
+      + '<div class="table-container"><table class="results-table">'
+      + '<thead><tr><th>#</th><th>Source</th><th>Details</th><th>Topic</th><th>Result</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table></div>'
+      + '<p style="margin-top:1.5rem">This study is part of research investigating the gap between AI-generated and human-written technical content. '
+      + 'Your evaluations will help us understand how professionals perceive writing quality across different generation methods.</p>'
+      + (pid ? '' : '<p style="margin-top:1.5rem;color:#86868b">You may now close this tab.</p>')
+      + '</div>';
+  }
+
+  // ===== NAVIGATION =====
+  // Total: 0=welcome, 1=demographics, 2=calibration, 3-10=passages, 11=debrief, 12=thanks
+
+  function render() {
+    state.pageStart = Date.now();
+    var pct = state.page >= 12 ? 100 : Math.round((state.page / 12) * 100);
+    var lbl = '';
+    if (state.page === 0) lbl = 'Welcome';
+    else if (state.page === 1) lbl = 'Demographics';
+    else if (state.page === 2) lbl = 'Calibration';
+    else if (state.page >= 3 && state.page <= 10) lbl = 'Passage ' + (state.page - 2) + '/8';
+    else if (state.page === 11) lbl = 'Final Questions';
+    else lbl = 'Complete';
+
+    var html = '<div class="progress-wrap">'
+      + '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>'
+      + '<div class="progress-label">' + lbl + '</div></div>';
+
+    if (state.page === 0) html += pgWelcome();
+    else if (state.page === 1) html += pgDemographics();
+    else if (state.page === 2) html += pgCalibration();
+    else if (state.page >= 3 && state.page <= 10) {
+      var idx = state.page - 3;
+      html += pgPassage(state.passageOrder[idx], idx + 1);
+    }
+    else if (state.page === 11) html += pgDebrief();
+    else html += pgThanks();
+
+    document.getElementById('app').innerHTML = html;
+    window.scrollTo(0, 0);
+
+    // KaTeX rendering for math passages
+    if (typeof renderMathInElement === 'function') {
+      var el = document.getElementById('passage-text');
+      if (el) {
+        renderMathInElement(el, {
+          delimiters: [
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    saveProgress();
+  }
+
+  // ===== DATA COLLECTION =====
+
+  function collect() {
+    if (state.page === 1) {
+      document.querySelectorAll('.radio-group input:checked').forEach(function(inp) {
+        var g = inp.closest('.radio-group');
+        if (g && g.dataset.field) state.demographics[g.dataset.field] = inp.value;
+      });
+      document.querySelectorAll('.likert input:checked').forEach(function(inp) {
+        state.demographics[inp.name] = parseInt(inp.value);
+      });
+    }
+    else if (state.page >= 3 && state.page <= 10) {
+      var pid = state.passageOrder[state.page - 3];
+      var r = {};
+      var oi = document.querySelector('input[name="origin"]:checked');
+      if (oi) r.origin = oi.value;
+      ['confidence','naturalness','clarity','engagement','authority','quality'].forEach(function(n) {
+        var el = document.querySelector('input[name="' + n + '"]:checked');
+        if (el) r[n] = parseInt(el.value);
+      });
+      var ta = document.querySelector('textarea[name="reasoning"]');
+      if (ta) r.reasoning = ta.value;
+      r.timeOnPage = Math.round((Date.now() - state.pageStart) / 1000);
+      state.passages[pid] = r;
+    }
+    else if (state.page === 11) {
+      ['features','comments'].forEach(function(n) {
+        var el = document.querySelector('textarea[name="' + n + '"]');
+        if (el) state.debrief[n] = el.value;
+      });
+      var bi = document.querySelector('input[name="bestAi"]:checked');
+      if (bi) state.debrief.bestAi = bi.value;
+    }
+  }
+
+  // ===== VALIDATION =====
+
+  function validate() {
+    if (state.page === 1) {
+      var d = state.demographics;
+      if (!d.experience || !d.role || !d.readFrequency || !d.aiConfidence)
+        return 'Please answer all questions before continuing.';
+    }
+    else if (state.page >= 3 && state.page <= 10) {
+      var pid = state.passageOrder[state.page - 3];
+      var r = state.passages[pid];
+      if (!r || !r.origin || !r.confidence || !r.naturalness || !r.clarity ||
+          !r.engagement || !r.authority || !r.quality)
+        return 'Please answer all required questions (Q1\u2013Q7) before continuing.';
+    }
+    return null;
+  }
+
+  function showError(msg) {
+    var el = document.getElementById('vmsg');
+    if (el) { el.textContent = msg; el.style.display = 'block'; }
+  }
+
+  // ===== PUBLIC API =====
+
+  window.SV = {
+    next: function() {
+      collect();
+      var err = validate();
+      if (err) { showError(err); return; }
+      state.page++;
+      render();
+    },
+    prev: function() {
+      collect();
+      if (state.page > 0) { state.page--; render(); }
+    },
+    submit: function() {
+      collect();
+
+      var payload = {
+        sessionId: state.sessionId,
+        startedAt: state.startTime,
+        completedAt: new Date().toISOString(),
+        passageOrder: state.passageOrder,
+        demographics: state.demographics,
+        passages: state.passages,
+        debrief: state.debrief,
+        prolific: state.prolific || null
+      };
+
+      var btn = document.querySelector('.btn-submit');
+      if (btn) { btn.disabled = true; btn.textContent = 'Submitting\u2026'; }
+
+      fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function(resp) {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+      }).then(function() {
+        state.submitted = true;
+        state.page = 12;
+        localStorage.removeItem('survey_progress');
+        render();
+      }).catch(function(err) {
+        if (btn) { btn.disabled = false; btn.textContent = 'Submit Survey'; }
+        showError('Failed to submit. Please check your connection and try again.');
+      });
+    }
+  };
+
+  // ===== INIT =====
+  render();
+
+})();
+</script>
+</body>
+</html>

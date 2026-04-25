@@ -1,0 +1,30 @@
+# Decompressed corpus database (the .gz version lives in git; gunzip on first use)
+data/humanization.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Wrangler / Cloudflare local artifacts
+survey/.wrangler/
+survey/wrangler.toml
+survey/node_modules/
+
+# Build artifacts
+*.aux
+*.log
+*.out
+*.toc
