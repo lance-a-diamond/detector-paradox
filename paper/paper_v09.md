@@ -606,7 +606,7 @@ License: MIT.
 
 ## Author information, funding, and competing interests
 
-Lance Diamond is an independent researcher developing Scribe, a commercial AI text generation product. The research described in this paper emerged from engineering problems encountered during Scribe's development — specifically, the gap between detector-evasion performance and reader-perceived quality observed in the product's humanization pipelines. This study was entirely self-funded.
+Lance Diamond ([ORCID 0009-0004-9691-4997](https://orcid.org/0009-0004-9691-4997)) is an independent researcher developing Scribe, a commercial AI text generation product. The research described in this paper emerged from engineering problems encountered during Scribe's development — specifically, the gap between detector-evasion performance and reader-perceived quality observed in the product's humanization pipelines. This study was entirely self-funded.
 
 **Cost transparency**: detector API costs (Pangram, GPTZero, Copyleaks) and Prolific participant compensation ($6.00 × 43 participants = $258 direct study cost, plus detector API spend in the mid three figures) were paid out-of-pocket by the author. No detector vendor sponsored, discounted, pro-rated, or otherwise supported this work. No detector vendor reviewed this manuscript prior to submission. The author has no external funding to disclose.
 
